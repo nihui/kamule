@@ -1,0 +1,4 @@
+File=kamulesettings.kcfg
+ClassName=KaMuleSettings
+Singleton=true
+Mutators=true

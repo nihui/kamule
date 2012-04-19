@@ -1,0 +1,29 @@
+KaMule is a KDE gui frontend for aMule
+it has most basic features
+manage ed2k servers
+search files on global servers
+manage download
+show upload clients and shared files
+configure aMule preference
+
+
+this software is still in early stage
+hope my application won't eat your cat
+
+
+
+how to use this application
+
+you need a working aMule-daemon 2.3.1
+version 2.3.1 is a must
+
+run amuled as "amuled -e -o"
+enter your ec password in amuled
+
+launch kamule application, set up proper amuled host ip/port and ec password
+host ip/port should be 127.0.0.1 and 4712 by default for a local amule daemon
+click connect button first
+click login button second
+
+now kamule should work fine
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DirectoryPage</class>
+ <widget class="PreferenceWidget" name="DirectoryPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Incoming directory: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="KUrlRequester" name="m_incomingUrl">
+       <property name="mode">
+        <set>KFile::Directory|KFile::ExistingOnly|KFile::LocalOnly</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Temp directory: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="KUrlRequester" name="m_tempUrl">
+       <property name="mode">
+        <set>KFile::Directory|KFile::ExistingOnly|KFile::LocalOnly</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PreferenceWidget</class>
+   <extends>QWidget</extends>
+   <header>preferencewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>KUrlRequester</class>
+   <extends>QFrame</extends>
+   <header>kurlrequester.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

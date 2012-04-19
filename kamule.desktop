@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=KaMule
+Name[zh_CN]=KaMule
+GenericName=KDE aMule Frontend
+GenericName[zh_CN]=KDE aMule 前端
+Exec=kamule
+Type=Application
+Terminal=false
+Icon=kamule
+Categories=Qt;KDE;Network;

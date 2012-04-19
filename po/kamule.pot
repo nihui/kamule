@@ -1,0 +1,678 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This_file_is_part_of_KaMule
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-04-19 12:45+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: amuledpage.cpp:43 networkpage.cpp:48
+msgid "Connect"
+msgstr ""
+
+#: amuledpage.cpp:45
+msgid "Login"
+msgstr ""
+
+#: amuledpage.cpp:47
+msgid "Connect Ed2k"
+msgstr ""
+
+#: amuledpage.cpp:49
+msgid "Disconnect Ed2k"
+msgstr ""
+
+#: amuledpage.cpp:51
+msgid "Connect Kad"
+msgstr ""
+
+#: amuledpage.cpp:53
+msgid "Disconnect Kad"
+msgstr ""
+
+#: amuledpage.cpp:89
+msgid "[Success] login"
+msgstr ""
+
+#: amuledpage.cpp:111
+msgid "[Success] connect to amule deamon"
+msgstr ""
+
+#: downloadlistmodel.cpp:209
+msgid "Waiting for hash"
+msgstr ""
+
+#: downloadlistmodel.cpp:210
+msgid "Hashing"
+msgstr ""
+
+#: downloadlistmodel.cpp:211
+msgid "Error"
+msgstr ""
+
+#: downloadlistmodel.cpp:212
+msgid "Paused"
+msgstr ""
+
+#: downloadlistmodel.cpp:213
+msgid "Completing"
+msgstr ""
+
+#: downloadlistmodel.cpp:214
+msgid "Complete"
+msgstr ""
+
+#: downloadlistmodel.cpp:215
+msgid "Allocating"
+msgstr ""
+
+#: downloadlistmodel.cpp:220
+msgid "Downloading"
+msgstr ""
+
+#: downloadlistmodel.cpp:220
+msgid "Waiting"
+msgstr ""
+
+#: downloadlistmodel.cpp:243 serverlistmodel.cpp:162
+msgid "Name"
+msgstr ""
+
+#: downloadlistmodel.cpp:244
+msgid "Size full"
+msgstr ""
+
+#: downloadlistmodel.cpp:245
+msgid "Size done"
+msgstr ""
+
+#: downloadlistmodel.cpp:246
+msgid "Speed"
+msgstr ""
+
+#: downloadlistmodel.cpp:247 serverlistmodel.cpp:168
+#: sharedfilelistmodel.cpp:186
+msgid "Priority"
+msgstr ""
+
+#: downloadlistmodel.cpp:248 searchlistmodel.cpp:133
+msgid "Status"
+msgstr ""
+
+#: downloadlistmodel.cpp:249 sharedfilelistmodel.cpp:189
+msgid "Progress"
+msgstr ""
+
+#: downloadpage.cpp:51
+msgid "Add Link"
+msgstr ""
+
+#: downloadpage.cpp:53 uploadpage.cpp:46
+msgid "Info"
+msgstr ""
+
+#: downloadpage.cpp:55
+msgid "Pause"
+msgstr ""
+
+#: downloadpage.cpp:57
+msgid "Resume"
+msgstr ""
+
+#: downloadpage.cpp:59
+msgid "Stop"
+msgstr ""
+
+#: downloadpage.cpp:61
+msgid "Delete"
+msgstr ""
+
+#: downloadpage.cpp:63 searchpage.cpp:55 sharedfilepage.cpp:44
+msgid "Copy Ed2k"
+msgstr ""
+
+#: kamule.cpp:56
+msgid "AMuled"
+msgstr ""
+
+#: kamule.cpp:59
+msgid "Network"
+msgstr ""
+
+#: kamule.cpp:62 searchpage.cpp:49
+msgid "Search"
+msgstr ""
+
+#: kamule.cpp:65 searchpage.cpp:53
+msgid "Download"
+msgstr ""
+
+#: kamule.cpp:68
+msgid "Upload"
+msgstr ""
+
+#: kamule.cpp:71
+msgid "Shared files"
+msgstr ""
+
+#: kamule.cpp:74
+msgid "Preference"
+msgstr ""
+
+#: kamule.cpp:89 kamule.cpp:91 main.cpp:31
+msgid "KaMule"
+msgstr ""
+
+#: kamule.cpp:92
+msgid "KDE aMule Client"
+msgstr ""
+
+#: main.cpp:32
+msgid "KDE aMule"
+msgstr ""
+
+#: main.cpp:33
+msgid "(C) 2012 Ni Hui"
+msgstr ""
+
+#: main.cpp:34
+msgid "Ni Hui"
+msgstr ""
+
+#: main.cpp:34
+msgid "Author"
+msgstr ""
+
+#: mystatusbar.cpp:96 mystatusbar.cpp:116
+#, kde-format
+msgid "Users: E %1 K %2"
+msgstr ""
+
+#: mystatusbar.cpp:97 mystatusbar.cpp:117
+#, kde-format
+msgid "Files: E %1 K %2"
+msgstr ""
+
+#: mystatusbar.cpp:98 mystatusbar.cpp:118
+#, kde-format
+msgid "Up: %1"
+msgstr ""
+
+#: mystatusbar.cpp:99 mystatusbar.cpp:119
+#, kde-format
+msgid "Down: %1"
+msgstr ""
+
+#: mystatusbar.cpp:100 mystatusbar.cpp:101 mystatusbar.cpp:128
+msgid "Disconnected"
+msgstr ""
+
+#: mystatusbar.cpp:100 mystatusbar.cpp:122 mystatusbar.cpp:125
+#, kde-format
+msgid "ED2K: %1"
+msgstr ""
+
+#: mystatusbar.cpp:101 mystatusbar.cpp:128 mystatusbar.cpp:131
+#: mystatusbar.cpp:134
+#, kde-format
+msgid "KAD: %1"
+msgstr ""
+
+#: mystatusbar.cpp:125
+msgid "Connecting"
+msgstr ""
+
+#: mystatusbar.cpp:131
+msgid "Firewalled"
+msgstr ""
+
+#: mystatusbar.cpp:134
+msgid "Open"
+msgstr ""
+
+#: networkpage.cpp:44
+msgid "Update From Url"
+msgstr ""
+
+#: networkpage.cpp:46
+msgid "Add Server"
+msgstr ""
+
+#: networkpage.cpp:50
+msgid "Disconnect"
+msgstr ""
+
+#: networkpage.cpp:52
+msgid "Remove"
+msgstr ""
+
+#: preferencemodel.cpp:60 preferencemodel.cpp:82
+msgid "General"
+msgstr ""
+
+#: preferencemodel.cpp:61 preferencemodel.cpp:83
+msgid "Connection"
+msgstr ""
+
+#: preferencemodel.cpp:62 preferencemodel.cpp:84
+msgid "Server"
+msgstr ""
+
+#: preferencemodel.cpp:63 preferencemodel.cpp:85
+msgid "File"
+msgstr ""
+
+#: preferencemodel.cpp:64 preferencemodel.cpp:86
+msgid "Directory"
+msgstr ""
+
+#: preferencemodel.cpp:65 preferencemodel.cpp:87
+msgid "Core tweak"
+msgstr ""
+
+#: preferencepage.cpp:41
+msgid "Reset"
+msgstr ""
+
+#: preferencepage.cpp:43
+msgid "Apply"
+msgstr ""
+
+#. i18n: file: amuledpage.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:3
+msgid "aMuled IP:Port"
+msgstr ""
+
+#. i18n: file: amuledpage.ui:29
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: networkpage.ui:53
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:6 rc.cpp:48
+msgid ":"
+msgstr ""
+
+#. i18n: file: amuledpage.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:9
+msgid "EC password"
+msgstr ""
+
+#. i18n: file: downloadinfodialog.ui:29
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:12
+msgid "Size full: "
+msgstr ""
+
+#. i18n: file: downloadinfodialog.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: rc.cpp:15
+msgid "Priority: "
+msgstr ""
+
+#. i18n: file: downloadinfodialog.ui:57
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:18
+msgid "Lost corruption: "
+msgstr ""
+
+#. i18n: file: downloadinfodialog.ui:64
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:21
+msgid "Last receive: "
+msgstr ""
+
+#. i18n: file: downloadinfodialog.ui:89
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:24
+msgid "Size done: "
+msgstr ""
+
+#. i18n: file: downloadinfodialog.ui:103
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: rc.cpp:27
+msgid "Available parts: "
+msgstr ""
+
+#. i18n: file: downloadinfodialog.ui:117
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:30
+msgid "Gained compression: "
+msgstr ""
+
+#. i18n: file: downloadinfodialog.ui:131
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:33
+msgid "Last seen complete: "
+msgstr ""
+
+#. i18n: file: downloadinfodialog.ui:149
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: uploadinfodialog.ui:157
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:36 rc.cpp:75
+msgid "Filename: "
+msgstr ""
+
+#. i18n: file: downloadinfodialog.ui:163
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:39
+msgid "Ed2k link: "
+msgstr ""
+
+#. i18n: file: networkpage.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:42
+msgid "Server name"
+msgstr ""
+
+#. i18n: file: networkpage.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:45 serverlistmodel.cpp:172
+msgid "IP:Port"
+msgstr ""
+
+#. i18n: file: uploadinfodialog.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:51
+msgid "User ip:port: "
+msgstr ""
+
+#. i18n: file: uploadinfodialog.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: rc.cpp:54
+msgid "Server ip:port: "
+msgstr ""
+
+#. i18n: file: uploadinfodialog.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:57
+msgid "Name: "
+msgstr ""
+
+#. i18n: file: uploadinfodialog.ui:72
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:60
+msgid "Server: "
+msgstr ""
+
+#. i18n: file: uploadinfodialog.ui:90
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:63
+msgid "Download total: "
+msgstr ""
+
+#. i18n: file: uploadinfodialog.ui:108
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:66
+msgid "Upload total: "
+msgstr ""
+
+#. i18n: file: uploadinfodialog.ui:129
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: preference/generalpage.ui:29
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:69 rc.cpp:141
+msgid "User hash: "
+msgstr ""
+
+#. i18n: file: uploadinfodialog.ui:143
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:72
+msgid "Software: "
+msgstr ""
+
+#. i18n: file: preference/connectionpage.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: preference/connectionpage.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:78 rc.cpp:84
+msgid "Max: "
+msgstr ""
+
+#. i18n: file: preference/connectionpage.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:81
+msgid "Upload: "
+msgstr ""
+
+#. i18n: file: preference/connectionpage.ui:64
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:87
+msgid "Download: "
+msgstr ""
+
+#. i18n: file: preference/connectionpage.ui:99
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:90
+msgid "Slot allocation: "
+msgstr ""
+
+#. i18n: file: preference/connectionpage.ui:113
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:93
+msgid "TCP port: "
+msgstr ""
+
+#. i18n: file: preference/connectionpage.ui:127
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:96
+msgid "UDP port: "
+msgstr ""
+
+#. i18n: file: preference/connectionpage.ui:141
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:99
+msgid "Max file sources: "
+msgstr ""
+
+#. i18n: file: preference/connectionpage.ui:155
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: rc.cpp:102
+msgid "Max connections: "
+msgstr ""
+
+#. i18n: file: preference/coretweakpage.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:105
+msgid "Max connections per five: "
+msgstr ""
+
+#. i18n: file: preference/coretweakpage.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:108
+msgid "File buffer: "
+msgstr ""
+
+#. i18n: file: preference/coretweakpage.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:111
+msgid "Upload queue: "
+msgstr ""
+
+#. i18n: file: preference/coretweakpage.ui:61
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:114
+msgid "Server keepalive timeout: "
+msgstr ""
+
+#. i18n: file: preference/directorypage.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:117
+msgid "Incoming directory: "
+msgstr ""
+
+#. i18n: file: preference/directorypage.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:120
+msgid "Temp directory: "
+msgstr ""
+
+#. i18n: file: preference/filepage.ui:17
+#. i18n: ectx: property (text), widget (QCheckBox, m_enableICH)
+#: rc.cpp:123
+msgid "Enable ICH"
+msgstr ""
+
+#. i18n: file: preference/filepage.ui:24
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoDownloadPriority)
+#: rc.cpp:126
+msgid "Auto download priority"
+msgstr ""
+
+#. i18n: file: preference/filepage.ui:31
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoUploadPriority)
+#: rc.cpp:129
+msgid "Auto upload priority"
+msgstr ""
+
+#. i18n: file: preference/filepage.ui:38
+#. i18n: ectx: property (text), widget (QCheckBox, m_checkFreeSpace)
+#: rc.cpp:132
+msgid "Check free space"
+msgstr ""
+
+#. i18n: file: preference/filepage.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:135
+msgid "Minimum free space: "
+msgstr ""
+
+#. i18n: file: preference/generalpage.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:138
+msgid "User nick: "
+msgstr ""
+
+#. i18n: file: preference/generalpage.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:144
+msgid "User host: "
+msgstr ""
+
+#. i18n: file: preference/generalpage.ui:55
+#. i18n: ectx: property (text), widget (QCheckBox, m_checkNewVersion)
+#: rc.cpp:147
+msgid "Check new version"
+msgstr ""
+
+#. i18n: file: preference/kadpage.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: preference/serverpage.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:150 rc.cpp:156
+msgid "Update URL: "
+msgstr ""
+
+#. i18n: file: preference/securitypage.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:153
+msgid "Can see shares: "
+msgstr ""
+
+#. i18n: file: preference/serverpage.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:159
+msgid "Dead server retries: "
+msgstr ""
+
+#. i18n: file: preference/serverpage.ui:49
+#. i18n: ectx: property (text), widget (QCheckBox, m_removeDead)
+#: rc.cpp:162
+msgid "Remove dead"
+msgstr ""
+
+#. i18n: file: preference/serverpage.ui:56
+#. i18n: ectx: property (text), widget (QCheckBox, m_useScoreSystem)
+#: rc.cpp:165
+msgid "Use score system"
+msgstr ""
+
+#. i18n: file: preference/serverpage.ui:63
+#. i18n: ectx: property (text), widget (QCheckBox, m_smartIDCheck)
+#: rc.cpp:168
+msgid "Smart ID check"
+msgstr ""
+
+#: searchlistmodel.cpp:131 sharedfilelistmodel.cpp:184 uploadlistmodel.cpp:207
+msgid "Filename"
+msgstr ""
+
+#: searchlistmodel.cpp:132 sharedfilelistmodel.cpp:185
+msgid "Size"
+msgstr ""
+
+#: searchlistmodel.cpp:134
+msgid "Source Count (XFER)"
+msgstr ""
+
+#: searchpage.cpp:51
+msgid "Cancel"
+msgstr ""
+
+#: serverlistmodel.cpp:163
+msgid "Description"
+msgstr ""
+
+#: serverlistmodel.cpp:164
+msgid "Ping"
+msgstr ""
+
+#: serverlistmodel.cpp:165
+msgid "Users"
+msgstr ""
+
+#: serverlistmodel.cpp:166
+msgid "UsersMax"
+msgstr ""
+
+#: serverlistmodel.cpp:167
+msgid "Files"
+msgstr ""
+
+#: serverlistmodel.cpp:169
+msgid "Failed"
+msgstr ""
+
+#: serverlistmodel.cpp:170
+msgid "Static"
+msgstr ""
+
+#: serverlistmodel.cpp:171
+msgid "Version"
+msgstr ""
+
+#: sharedfilelistmodel.cpp:187
+msgid "Require count"
+msgstr ""
+
+#: sharedfilelistmodel.cpp:188
+msgid "Accept count"
+msgstr ""
+
+#: uploadlistmodel.cpp:206
+msgid "Client"
+msgstr ""
+
+#: uploadlistmodel.cpp:208
+msgid "Up Speed"
+msgstr ""
+
+#: uploadlistmodel.cpp:209
+msgid "Down Speed"
+msgstr ""
+
+#: uploadlistmodel.cpp:210
+msgid "Software"
+msgstr ""

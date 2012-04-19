@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+    <kcfgfile name="kamulerc"/>
+    <group name="amuled">
+        <entry name="Host" type="String">
+            <default>127.0.0.1</default>
+        </entry>
+        <entry name="Port" type="String">
+            <default>4712</default>
+        </entry>
+        <entry name="ECPassword" type="String">
+            <default>qwerty</default>
+        </entry>
+    </group>
+</kcfg>
