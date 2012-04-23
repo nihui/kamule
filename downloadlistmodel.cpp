@@ -190,7 +190,7 @@ QVariant DownloadListModel::data(const QModelIndex& index, int role) const
             case 1: return pfi.sizefull;
             case 2: return pfi.sizedone;
             case 3: return pfi.speed;
-            case 4: return pfi.priority;
+            case 4: return pfi.priority >= 10 ? pfi.priority - 10 : pfi.priority;
             case 5: return pfi.status;
             case 6: return (double)pfi.sizedone / (double)pfi.sizefull;
         }
@@ -203,7 +203,33 @@ QVariant DownloadListModel::data(const QModelIndex& index, int role) const
             case 1: return KIO::convertSize(pfi.sizefull);
             case 2: return KIO::convertSize(pfi.sizedone);
             case 3: return KIO::convertSize(pfi.speed) + "/s";
-            case 4: return pfi.priority;
+            case 4: {
+                quint8 priority = pfi.priority;
+                bool autopriority = (priority >= 10);
+                if (autopriority) {
+                    priority -= 10;
+                    switch (priority) {
+                        case PR_VERYLOW: return i18n("Auto[Very Low]");
+                        case PR_LOW: return i18n("Auto[Low]");
+                        case PR_NORMAL: return i18n("Auto[Normal]");
+                        case PR_HIGH: return i18n("Auto[High]");
+                        case PR_VERYHIGH: return i18n("Auto[Very High]");
+                        case PR_AUTO: return i18n("Auto[Auto]");
+                        case PR_POWERSHARE: return i18n("Auto[Power Share]");
+                        default: return priority;
+                    }
+                }
+                switch (priority) {
+                    case PR_VERYLOW: return i18n("Very Low");
+                    case PR_LOW: return i18n("Low");
+                    case PR_NORMAL: return i18n("Normal");
+                    case PR_HIGH: return i18n("High");
+                    case PR_VERYHIGH: return i18n("Very High");
+                    case PR_AUTO: return i18n("Auto");
+                    case PR_POWERSHARE: return i18n("Power Share");
+                    default: return priority;
+                }
+            }
             case 5: {
                 switch (pfi.status) {
                     case PS_WAITINGFORHASH: return i18n("Waiting for hash");

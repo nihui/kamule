@@ -32,6 +32,7 @@
 #include <KUrl>
 
 #include "qecpacket.h"
+#include "Constants.h"
 
 #include "drawprogress.h"
 
@@ -145,7 +146,7 @@ QVariant SharedFileListModel::data(const QModelIndex& index, int role) const
         switch (index.column()) {
             case 0: return sfi.name;
             case 1: return sfi.sizefull;
-            case 2: return sfi.priority;
+            case 2: return sfi.priority >= 10 ? sfi.priority - 10 : sfi.priority;
             case 3: return sfi.reqcount;
             case 4: return sfi.acceptcount;
             case 5: return sfi.sizefull;
@@ -158,7 +159,33 @@ QVariant SharedFileListModel::data(const QModelIndex& index, int role) const
         switch (index.column()) {
             case 0: return sfi.name;
             case 1: return KIO::convertSize(sfi.sizefull);
-            case 2: return sfi.priority;
+            case 2: {
+                quint8 priority = sfi.priority;
+                bool autopriority = (priority >= 10);
+                if (autopriority) {
+                    priority -= 10;
+                    switch (priority) {
+                        case PR_VERYLOW: return i18n("Auto[Very Low]");
+                        case PR_LOW: return i18n("Auto[Low]");
+                        case PR_NORMAL: return i18n("Auto[Normal]");
+                        case PR_HIGH: return i18n("Auto[High]");
+                        case PR_VERYHIGH: return i18n("Auto[Very High]");
+                        case PR_AUTO: return i18n("Auto[Auto]");
+                        case PR_POWERSHARE: return i18n("Auto[Power Share]");
+                        default: return priority;
+                    }
+                }
+                switch (priority) {
+                    case PR_VERYLOW: return i18n("Very Low");
+                    case PR_LOW: return i18n("Low");
+                    case PR_NORMAL: return i18n("Normal");
+                    case PR_HIGH: return i18n("High");
+                    case PR_VERYHIGH: return i18n("Very High");
+                    case PR_AUTO: return i18n("Auto");
+                    case PR_POWERSHARE: return i18n("Power Share");
+                    default: return priority;
+                }
+            }
             case 3: return QString("%1 / %2").arg(sfi.reqcount).arg(sfi.reqcountall);
             case 4: return QString("%1 / %2").arg(sfi.acceptcount).arg(sfi.acceptcountall);
             case 5: return drawProgressBar(sfi.partstatus, sfi.gapstatus, sfi.reqstatus, sfi.sizefull);

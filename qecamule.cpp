@@ -47,15 +47,6 @@ void QECaMule::getConnectionState()
     sendPacket(p);
 }
 
-void QECaMule::downloadSetPriority(const QByteArray& hash, int priority)
-{
-    QECPacket p(EC_OP_PARTFILE_PRIO_SET);
-    QECTag tag(EC_TAG_PARTFILE, hash);
-    tag.addSubTag(EC_TAG_PARTFILE_PRIO, (uint64_t)priority);
-    p.addTag(tag);
-    sendPacket(p);
-}
-
 #endif
 #if 0
 

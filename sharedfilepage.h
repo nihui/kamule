@@ -25,6 +25,7 @@
 #include "ui_sharedfilepage.h"
 
 class QAction;
+class QActionGroup;
 
 class SharedFilePageWidget : public QWidget, public Ui::SharedFilePage
 {
@@ -35,9 +36,18 @@ public:
 private Q_SLOTS:
     void resizeColumns();
     void slotCopyLink();
+    void slotPriority(QAction* act);
     void showContextMenu(const QPoint& pos);
 private:
     QAction* copyLinkAct;
+    QAction* priorityAutoAct;
+    QAction* priorityPowerShareAct;
+    QAction* priorityVeryHighAct;
+    QAction* priorityHighAct;
+    QAction* priorityNormalAct;
+    QAction* priorityLowAct;
+    QAction* priorityVeryLowAct;
+    QActionGroup* priorityAct;
 };
 
 #endif // SHAREDFILEPAGE_H

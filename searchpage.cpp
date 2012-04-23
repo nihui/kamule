@@ -110,7 +110,13 @@ void SearchPageWidget::handlePacket(const QECPacket& p)
 void SearchPageWidget::slotSearch()
 {
     QECPacket p(EC_OP_SEARCH_START);
-    QECTag tag(EC_TAG_SEARCH_TYPE, (quint64)EC_SEARCH_GLOBAL);
+    QECTag tag(EC_TAG_SEARCH_TYPE);
+    if (m_searchTypeCombo->currentIndex() == 0)
+        tag.setTagData((quint64)EC_SEARCH_GLOBAL);
+    else if (m_searchTypeCombo->currentIndex() == 1)
+        tag.setTagData((quint64)EC_SEARCH_LOCAL);
+    else
+        tag.setTagData((quint64)EC_SEARCH_KAD);
     tag.addSubTag(EC_TAG_SEARCH_NAME, m_searchEdit->text());
     p.addTag(tag);
     QECaMule::self()->sendPacket(p);

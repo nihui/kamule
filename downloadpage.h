@@ -25,6 +25,7 @@
 #include "ui_downloadpage.h"
 
 class QAction;
+class QActionGroup;
 
 class DownloadPageWidget : public QWidget, public Ui::DownloadPage
 {
@@ -41,6 +42,7 @@ private Q_SLOTS:
     void slotStop();
     void slotDelete();
     void slotCopyLink();
+    void slotPriority(QAction* act);
     void showContextMenu(const QPoint& pos);
 private:
     QAction* addLinkAct;
@@ -50,6 +52,13 @@ private:
     QAction* stopAct;
     QAction* deleteAct;
     QAction* copyLinkAct;
+    QAction* priorityAutoAct;
+    QAction* priorityVeryHighAct;
+    QAction* priorityHighAct;
+    QAction* priorityNormalAct;
+    QAction* priorityLowAct;
+    QAction* priorityVeryLowAct;
+    QActionGroup* priorityAct;
 };
 
 #endif // DOWNLOADPAGE_H

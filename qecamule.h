@@ -35,7 +35,6 @@ public:
     virtual ~QECaMule();
 
 //     void getConnectionState();
-//     void downloadSetPriority(const QByteArray& hash, int priority);
 };
 
 #endif // QECAMULE_H
