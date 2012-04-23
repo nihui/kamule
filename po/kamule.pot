@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-23 20:28+0800\n"
+"POT-Creation-Date: 2012-04-23 21:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,12 +41,21 @@ msgstr ""
 msgid "Disconnect Kad"
 msgstr ""
 
-#: amuledpage.cpp:89
+#: amuledpage.cpp:92
 msgid "[Success] login"
 msgstr ""
 
-#: amuledpage.cpp:111
-msgid "[Success] connect to amule deamon"
+#: amuledpage.cpp:114
+msgid "[Success] connect to amule daemon"
+msgstr ""
+
+#: amuledpage.cpp:119
+msgid "[Warning] disconnect to amule daemon"
+msgstr ""
+
+#: amuledpage.cpp:124
+#, kde-format
+msgid "[Error] %1"
 msgstr ""
 
 #: downloadlistmodel.cpp:212 sharedfilelistmodel.cpp:168
@@ -703,6 +712,14 @@ msgstr ""
 
 #: searchpage.cpp:49
 msgid "Cancel"
+msgstr ""
+
+#: serverlistmodel.cpp:140
+msgid "Yes"
+msgstr ""
+
+#: serverlistmodel.cpp:140
+msgid "No"
 msgstr ""
 
 #: serverlistmodel.cpp:163

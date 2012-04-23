@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-23 20:28+0800\n"
-"PO-Revision-Date: 2012-04-23 20:30+0800\n"
+"POT-Creation-Date: 2012-04-23 21:16+0800\n"
+"PO-Revision-Date: 2012-04-23 21:16+0800\n"
 "Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
 "Language-Team: Chinese Simplified <kde-china@kde.org>\n"
 "Language: zh_CN\n"
@@ -447,6 +447,10 @@ msgstr "网络"
 msgid "Ni Hui"
 msgstr "Ni Hui"
 
+#: serverlistmodel.cpp:140
+msgid "No"
+msgstr "否"
+
 #: downloadlistmodel.cpp:225 downloadpage.cpp:72 sharedfilelistmodel.cpp:181
 #: sharedfilepage.cpp:57
 msgid "Normal"
@@ -747,13 +751,26 @@ msgstr "等待中"
 msgid "Waiting for hash"
 msgstr "等待校验中"
 
-#: amuledpage.cpp:111
-msgid "[Success] connect to amule deamon"
+#: serverlistmodel.cpp:140
+msgid "Yes"
+msgstr "是"
+
+#: amuledpage.cpp:124
+#, kde-format
+msgid "[Error] %1"
+msgstr "[错误] %1"
+
+#: amuledpage.cpp:114
+msgid "[Success] connect to amule daemon"
 msgstr "[成功] 连接到 amule 后台守护进程"
 
-#: amuledpage.cpp:89
+#: amuledpage.cpp:92
 msgid "[Success] login"
 msgstr "[成功] 登录"
+
+#: amuledpage.cpp:119
+msgid "[Warning] disconnect to amule daemon"
+msgstr "[警告] 断开 amule 后台守护进程"
 
 #. i18n: file: amuledpage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)

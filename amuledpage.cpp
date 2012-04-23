@@ -67,6 +67,9 @@ AMuledPageWidget::AMuledPageWidget(QWidget* parent)
     m_passwordEdit->setText(KaMuleSettings::self()->eCPassword());
 
     connect(QECaMule::self(), SIGNAL(connected()), this, SLOT(slotConnected()));
+    connect(QECaMule::self(), SIGNAL(disconnected()), this, SLOT(slotDisconnected()));
+    connect(QECaMule::self(), SIGNAL(error(QAbstractSocket::SocketError)),
+            this, SLOT(slotError()));
 
     QECaMule::self()->addSubscriber(EC_OP_AUTH_SALT, this);
     QECaMule::self()->addSubscriber(EC_OP_AUTH_OK, this);
@@ -108,7 +111,17 @@ void AMuledPageWidget::handlePacket(const QECPacket& p)
 
 void AMuledPageWidget::slotConnected()
 {
-    m_loggerEdit->append(i18n("[Success] connect to amule deamon"));
+    m_loggerEdit->append(i18n("[Success] connect to amule daemon"));
+}
+
+void AMuledPageWidget::slotDisconnected()
+{
+    m_loggerEdit->append(i18n("[Warning] disconnect to amule daemon"));
+}
+
+void AMuledPageWidget::slotError()
+{
+    m_loggerEdit->append(i18n("[Error] %1", QECaMule::self()->errorString()));
 }
 
 void AMuledPageWidget::slotConnect()

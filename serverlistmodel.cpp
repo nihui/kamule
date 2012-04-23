@@ -137,7 +137,7 @@ QVariant ServerListModel::data(const QModelIndex& index, int role) const
             case 5: return KIO::convertSize(si.files);
             case 6: return si.priority;
             case 7: return si.failed;
-            case 8: return si.statical;
+            case 8: return si.statical ? i18n("Yes") : i18n("No");
             case 9: return si.version;
             case 10: return QString("%1:%2").arg(QHostAddress(si.ip).toString()).arg(si.port);
             default: return QVariant();

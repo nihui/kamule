@@ -36,6 +36,8 @@ public:
     virtual void handlePacket(const QECPacket& p);
 private Q_SLOTS:
     void slotConnected();
+    void slotDisconnected();
+    void slotError();
     void slotConnect();
     void slotLogin();
     void slotConnectEd2k();
