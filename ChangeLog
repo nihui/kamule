@@ -1,0 +1,13 @@
+2012-04-23 v0.4
+set priority for download and shared files
+print connection error
+
+2012-04-19 v0.3
+hotfix for login
+
+2012-04-19 v0.2
+use quintxx instead of uintxx_t
+add main menu entry
+
+2012-04-19 v0.1
+initial public release
