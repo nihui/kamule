@@ -23,10 +23,13 @@
 
 #include <QAction>
 #include <QCryptographicHash>
+#include <QTimer>
 
 #include <KAboutData>
 #include <KComponentData>
 #include <KGlobal>
+#include <KPtyDevice>
+#include <KPtyProcess>
 
 #include "qecpacket.h"
 
@@ -38,6 +41,8 @@ AMuledPageWidget::AMuledPageWidget(QWidget* parent)
 : QWidget(parent)
 {
     setupUi(this);
+
+    amuled = 0;
 
     // set action
     connectAct = new QAction(KIcon("view-refresh"), i18n("Connect"), this);
@@ -62,9 +67,13 @@ AMuledPageWidget::AMuledPageWidget(QWidget* parent)
     m_disconnectKad->setDefaultAction(disconnectKadAct);
 
     // load amuled settings
+    KaMuleSettings::self()->readConfig();
+    m_useExternalDaemon->setChecked(KaMuleSettings::self()->useExternalDaemon());
     m_hostEdit->setText(KaMuleSettings::self()->host());
     m_portEdit->setText(KaMuleSettings::self()->port());
     m_passwordEdit->setText(KaMuleSettings::self()->eCPassword());
+
+    m_externalDaemonWidget->setVisible(KaMuleSettings::self()->useExternalDaemon());
 
     connect(QECaMule::self(), SIGNAL(connected()), this, SLOT(slotConnected()));
     connect(QECaMule::self(), SIGNAL(disconnected()), this, SLOT(slotDisconnected()));
@@ -73,14 +82,34 @@ AMuledPageWidget::AMuledPageWidget(QWidget* parent)
 
     QECaMule::self()->addSubscriber(EC_OP_AUTH_SALT, this);
     QECaMule::self()->addSubscriber(EC_OP_AUTH_OK, this);
+
+    if (!KaMuleSettings::self()->useExternalDaemon()) {
+        // run internal amuled instance
+        amuled = new KPtyProcess(this);
+        amuled->setPtyChannels(KPtyProcess::AllChannels);
+        connect(amuled->pty(), SIGNAL(readyRead()), this, SLOT(slotReadPtyOutput()));
+        connect(amuled, SIGNAL(error(QProcess::ProcessError)), this, SLOT(slotProcessError(QProcess::ProcessError)));
+        amuled->setProgram("amuled", QStringList() << "-e" << "-o");
+        amuled->start();
+    }
 }
 
 AMuledPageWidget::~AMuledPageWidget()
 {
+    if (amuled) {
+        // terminate internal amuled instance
+        amuled->terminate();
+
+        // just block to wait
+        amuled->waitForFinished();
+    }
+
     // save amuled settings
+    KaMuleSettings::self()->setUseExternalDaemon(m_useExternalDaemon->isChecked());
     KaMuleSettings::self()->setHost(m_hostEdit->text());
     KaMuleSettings::self()->setPort(m_portEdit->text());
     KaMuleSettings::self()->setECPassword(m_passwordEdit->text());
+    KaMuleSettings::self()->writeConfig();
 
     QECaMule::self()->removeSubscriber(EC_OP_AUTH_SALT, this);
     QECaMule::self()->removeSubscriber(EC_OP_AUTH_OK, this);
@@ -89,7 +118,7 @@ AMuledPageWidget::~AMuledPageWidget()
 void AMuledPageWidget::handlePacket(const QECPacket& p)
 {
     if (p.opCode() == EC_OP_AUTH_OK) {
-        m_loggerEdit->append(i18n("[Success] login"));
+        m_loggerEdit->appendPlainText(i18n("[KaMule] Logined"));
         return;
     }
 
@@ -109,19 +138,66 @@ void AMuledPageWidget::handlePacket(const QECPacket& p)
     QECaMule::self()->sendPacket(p2);
 }
 
+void AMuledPageWidget::slotReadPtyOutput()
+{
+    QString data = QString::fromUtf8(amuled->pty()->readAll());
+    QStringList lines = data.split("\n", QString::SkipEmptyParts);
+    foreach (const QString& line, lines) {
+        m_loggerEdit->appendPlainText(i18n("[Daemon] %1", line.trimmed()));
+    }
+
+    if (data.indexOf("Enter password for mule connection:") != -1) {
+        // write ec password
+        amuled->pty()->setEcho(false);
+        amuled->pty()->write("qwerty\n");
+        amuled->pty()->setEcho(true);
+
+        // auto connect and login
+        QTimer::singleShot(1000, this, SLOT(slotConnect()));
+        QTimer::singleShot(1500, this, SLOT(slotLogin()));
+    }
+}
+
+void AMuledPageWidget::slotProcessError(QProcess::ProcessError error)
+{
+    QString errorString;
+    switch (error) {
+        case QProcess::FailedToStart:
+            errorString = i18n("Failed to start");
+            break;
+        case QProcess::Crashed:
+            errorString = i18n("Crashed");
+            break;
+        case QProcess::Timedout:
+            errorString = i18n("Timed out");
+            break;
+        case QProcess::WriteError:
+            errorString = i18n("Write error");
+            break;
+        case QProcess::ReadError:
+            errorString = i18n("Read error");
+            break;
+        case QProcess::UnknownError:
+        default:
+            errorString = i18n("Unknown error");
+            break;
+    }
+    m_loggerEdit->appendPlainText(i18n("[KaMule] %1", errorString));
+}
+
 void AMuledPageWidget::slotConnected()
 {
-    m_loggerEdit->append(i18n("[Success] connect to amule daemon"));
+    m_loggerEdit->appendPlainText(i18n("[KaMule] Connected to amule daemon"));
 }
 
 void AMuledPageWidget::slotDisconnected()
 {
-    m_loggerEdit->append(i18n("[Warning] disconnect to amule daemon"));
+    m_loggerEdit->appendPlainText(i18n("[KaMule] Disconnected to amule daemon"));
 }
 
 void AMuledPageWidget::slotError()
 {
-    m_loggerEdit->append(i18n("[Error] %1", QECaMule::self()->errorString()));
+    m_loggerEdit->appendPlainText(i18n("[KaMule] %1", QECaMule::self()->errorString()));
 }
 
 void AMuledPageWidget::slotConnect()

@@ -25,7 +25,10 @@
 #include "ui_amuledpage.h"
 #include "qecpacketsubscriber.h"
 
+#include <QProcess>
+
 class QAction;
+class KPtyProcess;
 
 class AMuledPageWidget : public QWidget, public Ui::AMuledPage, public QECPacketSubscriber
 {
@@ -35,6 +38,8 @@ public:
     virtual ~AMuledPageWidget();
     virtual void handlePacket(const QECPacket& p);
 private Q_SLOTS:
+    void slotReadPtyOutput();
+    void slotProcessError(QProcess::ProcessError error);
     void slotConnected();
     void slotDisconnected();
     void slotError();
@@ -45,6 +50,7 @@ private Q_SLOTS:
     void slotConnectKad();
     void slotDisconnectKad();
 private:
+    KPtyProcess* amuled;
     QAction* connectAct;
     QAction* loginAct;
     QAction* connectEd2kAct;

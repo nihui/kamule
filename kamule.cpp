@@ -42,6 +42,8 @@
 #include "sharedfilepage.h"
 #include "preferencepage.h"
 
+#include "kamulesettings.h"
+
 #include "mystatusbar.h"
 
 KaMule::KaMule()

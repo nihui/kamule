@@ -78,6 +78,7 @@ kde4_add_executable(kamule ${kamule_SRCS})
 target_link_libraries(kamule
     ${KDE4_KDEUI_LIBS}
     ${KDE4_KIO_LIBS}
+    ${KDE4_KPTY_LIBS}
 )
 
 install(TARGETS kamule ${INSTALL_TARGETS_DEFAULT_ARGS})

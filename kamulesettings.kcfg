@@ -5,6 +5,9 @@
                           http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
     <kcfgfile name="kamulerc"/>
     <group name="amuled">
+        <entry name="UseExternalDaemon" type="Bool">
+            <default>false</default>
+        </entry>
         <entry name="Host" type="String">
             <default>127.0.0.1</default>
         </entry>

@@ -29,7 +29,7 @@
 int main(int argc, char **argv)
 {
     KAboutData about("kamule", 0, ki18n("KaMule"),
-                     "0.3", ki18n("KDE aMule"),
+                     "0.5", ki18n("KDE aMule"),
                      KAboutData::License_GPL, ki18n("(C) 2012 Ni Hui"));
     about.addAuthor(ki18n("Ni Hui"), ki18n("Author"), "shuizhuyuanluo@126.com");
 
