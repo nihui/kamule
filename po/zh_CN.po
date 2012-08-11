@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-23 21:16+0800\n"
-"PO-Revision-Date: 2012-04-23 21:16+0800\n"
+"POT-Creation-Date: 2012-08-11 16:23+0800\n"
+"PO-Revision-Date: 2012-08-11 16:26+0800\n"
 "Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
 "Language-Team: Chinese Simplified <kde-china@kde.org>\n"
 "Language: zh_CN\n"
@@ -15,21 +15,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: main.cpp:33
 msgid "(C) 2012 Ni Hui"
 msgstr "(C) 2012 Ni Hui"
 
-#. i18n: file: amuledpage.ui:29
+#. i18n: file: amuledpage.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: networkpage.ui:53
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:6 rc.cpp:48
+#: rc.cpp:9 rc.cpp:51
 msgid ":"
 msgstr ":"
 
-#: kamule.cpp:56
+#: kamule.cpp:58
 msgid "AMuled"
 msgstr "AMuled"
 
@@ -64,13 +64,13 @@ msgstr "自动"
 
 #. i18n: file: preference/filepage.ui:24
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoDownloadPriority)
-#: rc.cpp:135
+#: rc.cpp:138
 msgid "Auto download priority"
 msgstr "自动下载优先级"
 
 #. i18n: file: preference/filepage.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoUploadPriority)
-#: rc.cpp:138
+#: rc.cpp:141
 msgid "Auto upload priority"
 msgstr "自动上传优先级"
 
@@ -104,13 +104,13 @@ msgstr "自动[非常低]"
 
 #. i18n: file: downloadinfodialog.ui:103
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: rc.cpp:27
+#: rc.cpp:30
 msgid "Available parts: "
 msgstr "可用块："
 
 #. i18n: file: preference/securitypage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:162
+#: rc.cpp:165
 msgid "Can see shares: "
 msgstr "可以查看共享："
 
@@ -120,13 +120,13 @@ msgstr "取消"
 
 #. i18n: file: preference/filepage.ui:38
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkFreeSpace)
-#: rc.cpp:141
+#: rc.cpp:144
 msgid "Check free space"
 msgstr "检查剩余空间"
 
 #. i18n: file: preference/generalpage.ui:55
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkNewVersion)
-#: rc.cpp:156
+#: rc.cpp:159
 msgid "Check new version"
 msgstr "检查新版本"
 
@@ -142,15 +142,15 @@ msgstr "完成"
 msgid "Completing"
 msgstr "完成中"
 
-#: amuledpage.cpp:43 networkpage.cpp:48
+#: amuledpage.cpp:48 networkpage.cpp:48
 msgid "Connect"
 msgstr "连接"
 
-#: amuledpage.cpp:47
+#: amuledpage.cpp:52
 msgid "Connect Ed2k"
 msgstr "连接 Ed2k"
 
-#: amuledpage.cpp:51
+#: amuledpage.cpp:56
 msgid "Connect Kad"
 msgstr "连接 Kad"
 
@@ -170,9 +170,13 @@ msgstr "复制 Ed2k"
 msgid "Core tweak"
 msgstr "核心调节"
 
+#: amuledpage.cpp:169
+msgid "Crashed"
+msgstr "已崩溃"
+
 #. i18n: file: preference/serverpage.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:168
+#: rc.cpp:171
 msgid "Dead server retries: "
 msgstr "失败服务器重试次数："
 
@@ -192,11 +196,11 @@ msgstr "目录"
 msgid "Disconnect"
 msgstr "断开"
 
-#: amuledpage.cpp:49
+#: amuledpage.cpp:54
 msgid "Disconnect Ed2k"
 msgstr "断开 Ed2k"
 
-#: amuledpage.cpp:53
+#: amuledpage.cpp:58
 msgid "Disconnect Kad"
 msgstr "断开 Kad"
 
@@ -213,19 +217,19 @@ msgstr "下载速度"
 msgid "Down: %1"
 msgstr "下载：%1"
 
-#: kamule.cpp:65 searchpage.cpp:51
+#: kamule.cpp:67 searchpage.cpp:51
 msgid "Download"
 msgstr "下载"
 
 #. i18n: file: uploadinfodialog.ui:90
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:72
+#: rc.cpp:75
 msgid "Download total: "
 msgstr "总下载："
 
 #. i18n: file: preference/connectionpage.ui:64
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:96
+#: rc.cpp:99
 msgid "Download: "
 msgstr "下载："
 
@@ -233,9 +237,9 @@ msgstr "下载："
 msgid "Downloading"
 msgstr "下载中"
 
-#. i18n: file: amuledpage.ui:50
+#. i18n: file: amuledpage.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:9
+#: rc.cpp:12
 msgid "EC password"
 msgstr "EC 密码"
 
@@ -246,13 +250,13 @@ msgstr "ED2K：%1"
 
 #. i18n: file: downloadinfodialog.ui:163
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:39
+#: rc.cpp:42
 msgid "Ed2k link: "
 msgstr "Ed2k 链接："
 
 #. i18n: file: preference/filepage.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, m_enableICH)
-#: rc.cpp:132
+#: rc.cpp:135
 msgid "Enable ICH"
 msgstr "启用 ICH"
 
@@ -264,13 +268,17 @@ msgstr "错误"
 msgid "Failed"
 msgstr "失败"
 
+#: amuledpage.cpp:166
+msgid "Failed to start"
+msgstr "启动失败"
+
 #: preferencemodel.cpp:63 preferencemodel.cpp:85
 msgid "File"
 msgstr "文件"
 
 #. i18n: file: preference/coretweakpage.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:117
+#: rc.cpp:120
 msgid "File buffer: "
 msgstr "文件缓存："
 
@@ -282,7 +290,7 @@ msgstr "文件名"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: uploadinfodialog.ui:157
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:36 rc.cpp:84
+#: rc.cpp:39 rc.cpp:87
 msgid "Filename: "
 msgstr "文件名："
 
@@ -301,7 +309,7 @@ msgstr "有防火墙"
 
 #. i18n: file: downloadinfodialog.ui:117
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:30
+#: rc.cpp:33
 msgid "Gained compression: "
 msgstr "压缩获益："
 
@@ -311,7 +319,7 @@ msgstr "常规"
 
 #. i18n: file: searchpage.ui:37
 #. i18n: ectx: property (text), item, widget (QComboBox, m_searchTypeCombo)
-#: rc.cpp:51
+#: rc.cpp:54
 msgid "Global"
 msgstr "全局"
 
@@ -326,13 +334,13 @@ msgstr "高"
 
 #. i18n: file: networkpage.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:45 serverlistmodel.cpp:172
+#: rc.cpp:48 serverlistmodel.cpp:172
 msgid "IP:Port"
 msgstr "IP:端口"
 
 #. i18n: file: preference/directorypage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:126
+#: rc.cpp:129
 msgid "Incoming directory: "
 msgstr "下载目录："
 
@@ -350,45 +358,45 @@ msgstr "KAD：%1"
 msgid "KDE aMule"
 msgstr "KDE aMule"
 
-#: kamule.cpp:94
+#: kamule.cpp:96
 msgid "KDE aMule Client"
 msgstr "KDE aMule 客户端"
 
-#: kamule.cpp:91 kamule.cpp:93 main.cpp:31
+#: kamule.cpp:93 kamule.cpp:95 main.cpp:31
 msgid "KaMule"
 msgstr "KaMule"
 
 #. i18n: file: searchpage.ui:47
 #. i18n: ectx: property (text), item, widget (QComboBox, m_searchTypeCombo)
-#: rc.cpp:57
+#: rc.cpp:60
 msgid "Kad"
 msgstr "Kad"
 
 #. i18n: file: downloadinfodialog.ui:64
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:21
+#: rc.cpp:24
 msgid "Last receive: "
 msgstr "最后接收："
 
 #. i18n: file: downloadinfodialog.ui:131
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:33
+#: rc.cpp:36
 msgid "Last seen complete: "
 msgstr "最后看见完整文件："
 
 #. i18n: file: searchpage.ui:42
 #. i18n: ectx: property (text), item, widget (QComboBox, m_searchTypeCombo)
-#: rc.cpp:54
+#: rc.cpp:57
 msgid "Local"
 msgstr "本地"
 
-#: amuledpage.cpp:45
+#: amuledpage.cpp:50
 msgid "Login"
 msgstr "登录"
 
 #. i18n: file: downloadinfodialog.ui:57
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:18
+#: rc.cpp:21
 msgid "Lost corruption: "
 msgstr "损坏丢失："
 
@@ -399,19 +407,19 @@ msgstr "低"
 
 #. i18n: file: preference/coretweakpage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:114
+#: rc.cpp:117
 msgid "Max connections per five: "
 msgstr "每 5 秒最大连接数："
 
 #. i18n: file: preference/connectionpage.ui:155
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:111
+#: rc.cpp:114
 msgid "Max connections: "
 msgstr "最大连接数："
 
 #. i18n: file: preference/connectionpage.ui:141
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:108
+#: rc.cpp:111
 msgid "Max file sources: "
 msgstr "最大文件来源数："
 
@@ -419,13 +427,13 @@ msgstr "最大文件来源数："
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: preference/connectionpage.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:87 rc.cpp:93
+#: rc.cpp:90 rc.cpp:96
 msgid "Max: "
 msgstr "最大："
 
 #. i18n: file: preference/filepage.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:144
+#: rc.cpp:147
 msgid "Minimum free space: "
 msgstr "最小剩余空间："
 
@@ -435,11 +443,11 @@ msgstr "名称"
 
 #. i18n: file: uploadinfodialog.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:66
+#: rc.cpp:69
 msgid "Name: "
 msgstr "名称："
 
-#: kamule.cpp:59
+#: kamule.cpp:61
 msgid "Network"
 msgstr "网络"
 
@@ -476,7 +484,7 @@ msgstr "Ping"
 msgid "Power Share"
 msgstr "强力共享"
 
-#: kamule.cpp:74
+#: kamule.cpp:76
 msgid "Preference"
 msgstr "首选项"
 
@@ -487,7 +495,7 @@ msgstr "优先级"
 
 #. i18n: file: downloadinfodialog.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:15
+#: rc.cpp:18
 msgid "Priority: "
 msgstr "优先级："
 
@@ -495,13 +503,17 @@ msgstr "优先级："
 msgid "Progress"
 msgstr "进度"
 
+#: amuledpage.cpp:178
+msgid "Read error"
+msgstr "读取错误"
+
 #: networkpage.cpp:52
 msgid "Remove"
 msgstr "删除"
 
 #. i18n: file: preference/serverpage.ui:49
 #. i18n: ectx: property (text), widget (QCheckBox, m_removeDead)
-#: rc.cpp:171
+#: rc.cpp:174
 msgid "Remove dead"
 msgstr "删除失败的服务器"
 
@@ -517,7 +529,7 @@ msgstr "重置"
 msgid "Resume"
 msgstr "恢复"
 
-#: kamule.cpp:62 searchpage.cpp:47
+#: kamule.cpp:64 searchpage.cpp:47
 msgid "Search"
 msgstr "搜索"
 
@@ -527,25 +539,25 @@ msgstr "服务器"
 
 #. i18n: file: uploadinfodialog.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:63
+#: rc.cpp:66
 msgid "Server ip:port: "
 msgstr "服务器 ip:端口："
 
 #. i18n: file: preference/coretweakpage.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:123
+#: rc.cpp:126
 msgid "Server keepalive timeout: "
 msgstr "服务器响应超时："
 
 #. i18n: file: networkpage.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:42
+#: rc.cpp:45
 msgid "Server name"
 msgstr "服务器名称"
 
 #. i18n: file: uploadinfodialog.ui:72
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:69
+#: rc.cpp:72
 msgid "Server: "
 msgstr "服务器："
 
@@ -553,7 +565,7 @@ msgstr "服务器："
 msgid "Set priority"
 msgstr "设定优先级"
 
-#: kamule.cpp:71
+#: kamule.cpp:73
 msgid "Shared files"
 msgstr "共享文件"
 
@@ -567,7 +579,7 @@ msgstr "已完成"
 
 #. i18n: file: downloadinfodialog.ui:89
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:24
+#: rc.cpp:27
 msgid "Size done: "
 msgstr "已完成："
 
@@ -577,19 +589,19 @@ msgstr "总大小"
 
 #. i18n: file: downloadinfodialog.ui:29
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:12
+#: rc.cpp:15
 msgid "Size full: "
 msgstr "总大小："
 
 #. i18n: file: preference/connectionpage.ui:99
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:99
+#: rc.cpp:102
 msgid "Slot allocation: "
 msgstr "槽分配："
 
 #. i18n: file: preference/serverpage.ui:63
 #. i18n: ectx: property (text), widget (QCheckBox, m_smartIDCheck)
-#: rc.cpp:177
+#: rc.cpp:180
 msgid "Smart ID check"
 msgstr "智能 ID 检测"
 
@@ -599,7 +611,7 @@ msgstr "软件"
 
 #. i18n: file: uploadinfodialog.ui:143
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:81
+#: rc.cpp:84
 msgid "Software: "
 msgstr "软件："
 
@@ -625,21 +637,29 @@ msgstr "停止"
 
 #. i18n: file: preference/connectionpage.ui:113
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:102
+#: rc.cpp:105
 msgid "TCP port: "
 msgstr "TCP 端口："
 
 #. i18n: file: preference/directorypage.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:129
+#: rc.cpp:132
 msgid "Temp directory: "
 msgstr "临时目录："
 
+#: amuledpage.cpp:172
+msgid "Timed out"
+msgstr "已超时"
+
 #. i18n: file: preference/connectionpage.ui:127
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:105
+#: rc.cpp:108
 msgid "UDP port: "
 msgstr "UDP 端口："
+
+#: amuledpage.cpp:182
+msgid "Unknown error"
+msgstr "未知错误"
 
 #: uploadlistmodel.cpp:208
 msgid "Up Speed"
@@ -658,35 +678,41 @@ msgstr "从 Url 更新"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: file: preference/serverpage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:159 rc.cpp:165
+#: rc.cpp:162 rc.cpp:168
 msgid "Update URL: "
 msgstr "更新 URL："
 
-#: kamule.cpp:68
+#: kamule.cpp:70
 msgid "Upload"
 msgstr "上传"
 
 #. i18n: file: preference/coretweakpage.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:120
+#: rc.cpp:123
 msgid "Upload queue: "
 msgstr "上传队列："
 
 #. i18n: file: uploadinfodialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:75
+#: rc.cpp:78
 msgid "Upload total: "
 msgstr "总上传："
 
 #. i18n: file: preference/connectionpage.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:90
+#: rc.cpp:93
 msgid "Upload: "
 msgstr "上传："
 
+#. i18n: file: amuledpage.ui:67
+#. i18n: ectx: property (text), widget (QCheckBox, m_useExternalDaemon)
+#: rc.cpp:3
+msgid "Use external daemon"
+msgstr "使用外部后端"
+
 #. i18n: file: preference/serverpage.ui:56
 #. i18n: ectx: property (text), widget (QCheckBox, m_useScoreSystem)
-#: rc.cpp:174
+#: rc.cpp:177
 msgid "Use score system"
 msgstr "使用评分系统"
 
@@ -694,25 +720,25 @@ msgstr "使用评分系统"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: preference/generalpage.ui:29
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:78 rc.cpp:150
+#: rc.cpp:81 rc.cpp:153
 msgid "User hash: "
 msgstr "用户散列："
 
 #. i18n: file: preference/generalpage.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:153
+#: rc.cpp:156
 msgid "User host: "
 msgstr "用户主机："
 
 #. i18n: file: uploadinfodialog.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:60
+#: rc.cpp:63
 msgid "User ip:port: "
 msgstr "用户 ip:端口："
 
 #. i18n: file: preference/generalpage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:147
+#: rc.cpp:150
 msgid "User nick: "
 msgstr "用户昵称："
 
@@ -751,30 +777,38 @@ msgstr "等待中"
 msgid "Waiting for hash"
 msgstr "等待校验中"
 
+#: amuledpage.cpp:175
+msgid "Write error"
+msgstr "写入错误"
+
 #: serverlistmodel.cpp:140
 msgid "Yes"
 msgstr "是"
 
-#: amuledpage.cpp:124
+#: amuledpage.cpp:146
 #, kde-format
-msgid "[Error] %1"
-msgstr "[错误] %1"
+msgid "[Daemon] %1"
+msgstr "[后端] %1"
 
-#: amuledpage.cpp:114
-msgid "[Success] connect to amule daemon"
-msgstr "[成功] 连接到 amule 后台守护进程"
+#: amuledpage.cpp:185 amuledpage.cpp:200
+#, kde-format
+msgid "[KaMule] %1"
+msgstr "[KaMule] %1"
 
-#: amuledpage.cpp:92
-msgid "[Success] login"
-msgstr "[成功] 登录"
+#: amuledpage.cpp:190
+msgid "[KaMule] Connected to amule daemon"
+msgstr "[KaMule] 已连接 amule 后台守护进程"
 
-#: amuledpage.cpp:119
-msgid "[Warning] disconnect to amule daemon"
-msgstr "[警告] 断开 amule 后台守护进程"
+#: amuledpage.cpp:195
+msgid "[KaMule] Disconnected to amule daemon"
+msgstr "[KaMule] 已断开 amule 后台守护进程"
 
-#. i18n: file: amuledpage.ui:19
+#: amuledpage.cpp:121
+msgid "[KaMule] Logined"
+msgstr "[KaMule] 已登录"
+
+#. i18n: file: amuledpage.ui:84
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:3
+#: rc.cpp:6
 msgid "aMuled IP:Port"
 msgstr "aMuled IP:端口"
-

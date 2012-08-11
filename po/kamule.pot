@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-23 21:16+0800\n"
+"POT-Creation-Date: 2012-08-11 16:23+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,45 +17,74 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: amuledpage.cpp:43 networkpage.cpp:48
+#: amuledpage.cpp:48 networkpage.cpp:48
 msgid "Connect"
 msgstr ""
 
-#: amuledpage.cpp:45
+#: amuledpage.cpp:50
 msgid "Login"
 msgstr ""
 
-#: amuledpage.cpp:47
+#: amuledpage.cpp:52
 msgid "Connect Ed2k"
 msgstr ""
 
-#: amuledpage.cpp:49
+#: amuledpage.cpp:54
 msgid "Disconnect Ed2k"
 msgstr ""
 
-#: amuledpage.cpp:51
+#: amuledpage.cpp:56
 msgid "Connect Kad"
 msgstr ""
 
-#: amuledpage.cpp:53
+#: amuledpage.cpp:58
 msgid "Disconnect Kad"
 msgstr ""
 
-#: amuledpage.cpp:92
-msgid "[Success] login"
+#: amuledpage.cpp:121
+msgid "[KaMule] Logined"
 msgstr ""
 
-#: amuledpage.cpp:114
-msgid "[Success] connect to amule daemon"
-msgstr ""
-
-#: amuledpage.cpp:119
-msgid "[Warning] disconnect to amule daemon"
-msgstr ""
-
-#: amuledpage.cpp:124
+#: amuledpage.cpp:146
 #, kde-format
-msgid "[Error] %1"
+msgid "[Daemon] %1"
+msgstr ""
+
+#: amuledpage.cpp:166
+msgid "Failed to start"
+msgstr ""
+
+#: amuledpage.cpp:169
+msgid "Crashed"
+msgstr ""
+
+#: amuledpage.cpp:172
+msgid "Timed out"
+msgstr ""
+
+#: amuledpage.cpp:175
+msgid "Write error"
+msgstr ""
+
+#: amuledpage.cpp:178
+msgid "Read error"
+msgstr ""
+
+#: amuledpage.cpp:182
+msgid "Unknown error"
+msgstr ""
+
+#: amuledpage.cpp:185 amuledpage.cpp:200
+#, kde-format
+msgid "[KaMule] %1"
+msgstr ""
+
+#: amuledpage.cpp:190
+msgid "[KaMule] Connected to amule daemon"
+msgstr ""
+
+#: amuledpage.cpp:195
+msgid "[KaMule] Disconnected to amule daemon"
 msgstr ""
 
 #: downloadlistmodel.cpp:212 sharedfilelistmodel.cpp:168
@@ -217,39 +246,39 @@ msgstr ""
 msgid "Set priority"
 msgstr ""
 
-#: kamule.cpp:56
+#: kamule.cpp:58
 msgid "AMuled"
 msgstr ""
 
-#: kamule.cpp:59
+#: kamule.cpp:61
 msgid "Network"
 msgstr ""
 
-#: kamule.cpp:62 searchpage.cpp:47
+#: kamule.cpp:64 searchpage.cpp:47
 msgid "Search"
 msgstr ""
 
-#: kamule.cpp:65 searchpage.cpp:51
+#: kamule.cpp:67 searchpage.cpp:51
 msgid "Download"
 msgstr ""
 
-#: kamule.cpp:68
+#: kamule.cpp:70
 msgid "Upload"
 msgstr ""
 
-#: kamule.cpp:71
+#: kamule.cpp:73
 msgid "Shared files"
 msgstr ""
 
-#: kamule.cpp:74
+#: kamule.cpp:76
 msgid "Preference"
 msgstr ""
 
-#: kamule.cpp:91 kamule.cpp:93 main.cpp:31
+#: kamule.cpp:93 kamule.cpp:95 main.cpp:31
 msgid "KaMule"
 msgstr ""
 
-#: kamule.cpp:94
+#: kamule.cpp:96
 msgid "KDE aMule Client"
 msgstr ""
 
@@ -364,71 +393,77 @@ msgstr ""
 msgid "Apply"
 msgstr ""
 
-#. i18n: file: amuledpage.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: amuledpage.ui:67
+#. i18n: ectx: property (text), widget (QCheckBox, m_useExternalDaemon)
 #: rc.cpp:3
+msgid "Use external daemon"
+msgstr ""
+
+#. i18n: file: amuledpage.ui:84
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:6
 msgid "aMuled IP:Port"
 msgstr ""
 
-#. i18n: file: amuledpage.ui:29
+#. i18n: file: amuledpage.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: networkpage.ui:53
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:6 rc.cpp:48
+#: rc.cpp:9 rc.cpp:51
 msgid ":"
 msgstr ""
 
-#. i18n: file: amuledpage.ui:50
+#. i18n: file: amuledpage.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:9
+#: rc.cpp:12
 msgid "EC password"
 msgstr ""
 
 #. i18n: file: downloadinfodialog.ui:29
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:12
+#: rc.cpp:15
 msgid "Size full: "
 msgstr ""
 
 #. i18n: file: downloadinfodialog.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:15
+#: rc.cpp:18
 msgid "Priority: "
 msgstr ""
 
 #. i18n: file: downloadinfodialog.ui:57
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:18
+#: rc.cpp:21
 msgid "Lost corruption: "
 msgstr ""
 
 #. i18n: file: downloadinfodialog.ui:64
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:21
+#: rc.cpp:24
 msgid "Last receive: "
 msgstr ""
 
 #. i18n: file: downloadinfodialog.ui:89
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:24
+#: rc.cpp:27
 msgid "Size done: "
 msgstr ""
 
 #. i18n: file: downloadinfodialog.ui:103
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: rc.cpp:27
+#: rc.cpp:30
 msgid "Available parts: "
 msgstr ""
 
 #. i18n: file: downloadinfodialog.ui:117
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:30
+#: rc.cpp:33
 msgid "Gained compression: "
 msgstr ""
 
 #. i18n: file: downloadinfodialog.ui:131
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:33
+#: rc.cpp:36
 msgid "Last seen complete: "
 msgstr ""
 
@@ -436,79 +471,79 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: uploadinfodialog.ui:157
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:36 rc.cpp:84
+#: rc.cpp:39 rc.cpp:87
 msgid "Filename: "
 msgstr ""
 
 #. i18n: file: downloadinfodialog.ui:163
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:39
+#: rc.cpp:42
 msgid "Ed2k link: "
 msgstr ""
 
 #. i18n: file: networkpage.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:42
+#: rc.cpp:45
 msgid "Server name"
 msgstr ""
 
 #. i18n: file: networkpage.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:45 serverlistmodel.cpp:172
+#: rc.cpp:48 serverlistmodel.cpp:172
 msgid "IP:Port"
 msgstr ""
 
 #. i18n: file: searchpage.ui:37
 #. i18n: ectx: property (text), item, widget (QComboBox, m_searchTypeCombo)
-#: rc.cpp:51
+#: rc.cpp:54
 msgid "Global"
 msgstr ""
 
 #. i18n: file: searchpage.ui:42
 #. i18n: ectx: property (text), item, widget (QComboBox, m_searchTypeCombo)
-#: rc.cpp:54
+#: rc.cpp:57
 msgid "Local"
 msgstr ""
 
 #. i18n: file: searchpage.ui:47
 #. i18n: ectx: property (text), item, widget (QComboBox, m_searchTypeCombo)
-#: rc.cpp:57
+#: rc.cpp:60
 msgid "Kad"
 msgstr ""
 
 #. i18n: file: uploadinfodialog.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:60
+#: rc.cpp:63
 msgid "User ip:port: "
 msgstr ""
 
 #. i18n: file: uploadinfodialog.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:63
+#: rc.cpp:66
 msgid "Server ip:port: "
 msgstr ""
 
 #. i18n: file: uploadinfodialog.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:66
+#: rc.cpp:69
 msgid "Name: "
 msgstr ""
 
 #. i18n: file: uploadinfodialog.ui:72
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:69
+#: rc.cpp:72
 msgid "Server: "
 msgstr ""
 
 #. i18n: file: uploadinfodialog.ui:90
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:72
+#: rc.cpp:75
 msgid "Download total: "
 msgstr ""
 
 #. i18n: file: uploadinfodialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:75
+#: rc.cpp:78
 msgid "Upload total: "
 msgstr ""
 
@@ -516,13 +551,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: preference/generalpage.ui:29
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:78 rc.cpp:150
+#: rc.cpp:81 rc.cpp:153
 msgid "User hash: "
 msgstr ""
 
 #. i18n: file: uploadinfodialog.ui:143
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:81
+#: rc.cpp:84
 msgid "Software: "
 msgstr ""
 
@@ -530,133 +565,133 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: preference/connectionpage.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:87 rc.cpp:93
+#: rc.cpp:90 rc.cpp:96
 msgid "Max: "
 msgstr ""
 
 #. i18n: file: preference/connectionpage.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:90
+#: rc.cpp:93
 msgid "Upload: "
 msgstr ""
 
 #. i18n: file: preference/connectionpage.ui:64
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:96
+#: rc.cpp:99
 msgid "Download: "
 msgstr ""
 
 #. i18n: file: preference/connectionpage.ui:99
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:99
+#: rc.cpp:102
 msgid "Slot allocation: "
 msgstr ""
 
 #. i18n: file: preference/connectionpage.ui:113
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:102
+#: rc.cpp:105
 msgid "TCP port: "
 msgstr ""
 
 #. i18n: file: preference/connectionpage.ui:127
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:105
+#: rc.cpp:108
 msgid "UDP port: "
 msgstr ""
 
 #. i18n: file: preference/connectionpage.ui:141
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:108
+#: rc.cpp:111
 msgid "Max file sources: "
 msgstr ""
 
 #. i18n: file: preference/connectionpage.ui:155
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:111
+#: rc.cpp:114
 msgid "Max connections: "
 msgstr ""
 
 #. i18n: file: preference/coretweakpage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:114
+#: rc.cpp:117
 msgid "Max connections per five: "
 msgstr ""
 
 #. i18n: file: preference/coretweakpage.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:117
+#: rc.cpp:120
 msgid "File buffer: "
 msgstr ""
 
 #. i18n: file: preference/coretweakpage.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:120
+#: rc.cpp:123
 msgid "Upload queue: "
 msgstr ""
 
 #. i18n: file: preference/coretweakpage.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:123
+#: rc.cpp:126
 msgid "Server keepalive timeout: "
 msgstr ""
 
 #. i18n: file: preference/directorypage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:126
+#: rc.cpp:129
 msgid "Incoming directory: "
 msgstr ""
 
 #. i18n: file: preference/directorypage.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:129
+#: rc.cpp:132
 msgid "Temp directory: "
 msgstr ""
 
 #. i18n: file: preference/filepage.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, m_enableICH)
-#: rc.cpp:132
+#: rc.cpp:135
 msgid "Enable ICH"
 msgstr ""
 
 #. i18n: file: preference/filepage.ui:24
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoDownloadPriority)
-#: rc.cpp:135
+#: rc.cpp:138
 msgid "Auto download priority"
 msgstr ""
 
 #. i18n: file: preference/filepage.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoUploadPriority)
-#: rc.cpp:138
+#: rc.cpp:141
 msgid "Auto upload priority"
 msgstr ""
 
 #. i18n: file: preference/filepage.ui:38
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkFreeSpace)
-#: rc.cpp:141
+#: rc.cpp:144
 msgid "Check free space"
 msgstr ""
 
 #. i18n: file: preference/filepage.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:144
+#: rc.cpp:147
 msgid "Minimum free space: "
 msgstr ""
 
 #. i18n: file: preference/generalpage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:147
+#: rc.cpp:150
 msgid "User nick: "
 msgstr ""
 
 #. i18n: file: preference/generalpage.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:153
+#: rc.cpp:156
 msgid "User host: "
 msgstr ""
 
 #. i18n: file: preference/generalpage.ui:55
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkNewVersion)
-#: rc.cpp:156
+#: rc.cpp:159
 msgid "Check new version"
 msgstr ""
 
@@ -664,37 +699,37 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: file: preference/serverpage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:159 rc.cpp:165
+#: rc.cpp:162 rc.cpp:168
 msgid "Update URL: "
 msgstr ""
 
 #. i18n: file: preference/securitypage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:162
+#: rc.cpp:165
 msgid "Can see shares: "
 msgstr ""
 
 #. i18n: file: preference/serverpage.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:168
+#: rc.cpp:171
 msgid "Dead server retries: "
 msgstr ""
 
 #. i18n: file: preference/serverpage.ui:49
 #. i18n: ectx: property (text), widget (QCheckBox, m_removeDead)
-#: rc.cpp:171
+#: rc.cpp:174
 msgid "Remove dead"
 msgstr ""
 
 #. i18n: file: preference/serverpage.ui:56
 #. i18n: ectx: property (text), widget (QCheckBox, m_useScoreSystem)
-#: rc.cpp:174
+#: rc.cpp:177
 msgid "Use score system"
 msgstr ""
 
 #. i18n: file: preference/serverpage.ui:63
 #. i18n: ectx: property (text), widget (QCheckBox, m_smartIDCheck)
-#: rc.cpp:177
+#: rc.cpp:180
 msgid "Smart ID check"
 msgstr ""
 
