@@ -11,11 +11,14 @@ this software is still in early stage
 hope my application won't eat your cat
 
 
-
-how to use this application
-
 you need a working aMule-daemon 2.3.1
 version 2.3.1 is a must
+
+kamule should work out of box using internal amule daemon instance since version 0.5
+
+=====================================================================
+
+how to use this application with external amule daemon instance
 
 run amuled as "amuled -e -o"
 enter your ec password in amuled
