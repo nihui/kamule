@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop">
+  <id>org.kde.kamule.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>KaMule</name>
+  <name xml:lang="zh-CN">KaMule</name>
+  <summary>KDE aMule</summary>
+  <summary xml:lang="zh-CN">KDE aMule</summary>
+  <description>
+    <p>
+        KDE aMule ed2k downloader.
+    </p>
+    <p xml:lang="zh-CN">KDE aMule ed2k 下载器。</p>
+  </description>
+  <url type="homepage">http://kde-apps.org/content/show.php/KaMule?content=150270</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=kamule</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>http://kde-apps.org/CONTENT/content-pre1/150270-1.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>KDE</project_group>
+  <provides>
+    <binary>kamule</binary>
+  </provides>
+</component>

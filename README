@@ -16,6 +16,12 @@ version 2.3.1 is a must
 
 kamule should work out of box using internal amule daemon instance since version 0.5
 
+manual install instruction
+mkdir build && cd build
+cmake -DCMAKE_INSTALL_PREFIX=`kf5-config --prefix` ..
+make
+sudo make install
+
 =====================================================================
 
 how to use this application with external amule daemon instance
