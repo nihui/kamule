@@ -21,15 +21,13 @@
 
 #include "sharedfilelistmodel.h"
 
+#include <QIcon>
 #include <QPainter>
+#include <QUrl>
 
-#include <KDebug>
-#include <KIcon>
 #include <KIconLoader>
 #include <kio/global.h>
-#include <KLocale>
-#include <KMimeType>
-#include <KUrl>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 #include "Constants.h"
@@ -109,7 +107,7 @@ SharedFileInfo QECTag2SharedFileInfo(const QECTag& t, bool* ok)
                 sfi.rating = subtag.toUInt8();
                 break;
             default:
-//                 kWarning() << subtag;
+//                 qWarning() << subtag;
                 break;
         }
     }
@@ -195,7 +193,7 @@ QVariant SharedFileListModel::data(const QModelIndex& index, int role) const
 
     if (role == Qt::DecorationRole && index.column() == 0) {
         const SharedFileInfo& sfi = m_files.at(index.row());
-        QString iconName = KMimeType::iconNameForUrl(KUrl(sfi.name));
+        QString iconName = KIO::iconNameForUrl(QUrl::fromLocalFile(sfi.name));
         return KIconLoader::global()->loadMimeTypeIcon(iconName, KIconLoader::Small);
     }
 

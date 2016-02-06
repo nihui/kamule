@@ -22,7 +22,7 @@
 #include "mystatusbar.h"
 
 #include <kio/global.h>
-#include <KLocale>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 
@@ -91,14 +91,19 @@ StatInfo QECPacket2StatInfo(const QECPacket& p, bool* ok)
 }
 
 MyStatusBar::MyStatusBar(QWidget* parent)
-: KStatusBar(parent)
+: QStatusBar(parent)
 {
-    insertItem(i18n("Users: E %1 K %2", 0, 0), 0);
-    insertItem(i18n("Files: E %1 K %2", 0, 0), 1);
-    insertItem(i18n("Up: %1", 0), 2);
-    insertItem(i18n("Down: %1", 0), 3);
-    insertItem(i18n("ED2K: %1", i18n("Disconnected")), 4);
-    insertItem(i18n("KAD: %1", i18n("Disconnected")), 5);
+    labels.append(new QLabel(i18n("Users: E %1 K %2", 0, 0)));
+    labels.append(new QLabel(i18n("Files: E %1 K %2", 0, 0)));
+    labels.append(new QLabel(i18n("Up: %1", 0)));
+    labels.append(new QLabel(i18n("Down: %1", 0)));
+    labels.append(new QLabel(i18n("ED2K: %1", i18n("Disconnected"))));
+    labels.append(new QLabel(i18n("KAD: %1", i18n("Disconnected"))));
+
+    foreach (QLabel* label, labels)
+    {
+        addPermanentWidget(label);
+    }
 
     QECaMule::self()->addSubscriber(EC_OP_STATS, this);
 }
@@ -113,24 +118,24 @@ void MyStatusBar::handlePacket(const QECPacket& p)
     bool ok;
     StatInfo si = QECPacket2StatInfo(p, &ok);
 
-    changeItem(i18n("Users: E %1 K %2", KIO::convertSize(si.ed2kusers), KIO::convertSize(si.kadusers)), 0);
-    changeItem(i18n("Files: E %1 K %2", KIO::convertSize(si.ed2kfiles), KIO::convertSize(si.kadfiles)), 1);
-    changeItem(i18n("Up: %1", KIO::convertSize(si.upspeed) + "/s"), 2);
-    changeItem(i18n("Down: %1", KIO::convertSize(si.downspeed) + "/s"), 3);
+    labels[0]->setText(i18n("Users: E %1 K %2", KIO::convertSize(si.ed2kusers), KIO::convertSize(si.kadusers)));
+    labels[1]->setText(i18n("Files: E %1 K %2", KIO::convertSize(si.ed2kfiles), KIO::convertSize(si.kadfiles)));
+    labels[2]->setText(i18n("Up: %1", KIO::convertSize(si.upspeed) + "/s"));
+    labels[3]->setText(i18n("Down: %1", KIO::convertSize(si.downspeed) + "/s"));
     quint8 stat = si.stat;
     if (stat & 0x01) {
-        changeItem(i18n("ED2K: %1", si.servername), 4);
+        labels[4]->setText(i18n("ED2K: %1", si.servername));
     }
     if (stat & 0x02) {
-        changeItem(i18n("ED2K: %1", i18n("Connecting")), 4);
+        labels[4]->setText(i18n("ED2K: %1", i18n("Connecting")));
     }
     if (stat & 0x04) {
-        changeItem(i18n("KAD: %1", i18n("Disconnected")), 5);
+        labels[5]->setText(i18n("KAD: %1", i18n("Disconnected")));
     }
     if (stat & 0x08) {
-        changeItem(i18n("KAD: %1", i18n("Firewalled")), 5);
+        labels[5]->setText(i18n("KAD: %1", i18n("Firewalled")));
     }
     if (stat & 0x10) {
-        changeItem(i18n("KAD: %1", i18n("Open")), 5);
+        labels[5]->setText(i18n("KAD: %1", i18n("Open")));
     }
 }

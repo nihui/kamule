@@ -22,15 +22,19 @@
 #ifndef MYSTATUSBAR_H
 #define MYSTATUSBAR_H
 
-#include <KStatusBar>
+#include <QStatusBar>
+#include <QLabel>
+#include <QList>
 #include "qecpacketsubscriber.h"
 
-class MyStatusBar : public KStatusBar, public QECPacketSubscriber
+class MyStatusBar : public QStatusBar, public QECPacketSubscriber
 {
 public:
     explicit MyStatusBar(QWidget* parent = 0);
     virtual ~MyStatusBar();
     virtual void handlePacket(const QECPacket& p);
+private:
+    QList<QLabel*> labels;
 };
 
 #endif // MYSTATUSBAR_H

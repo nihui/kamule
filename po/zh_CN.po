@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-11 16:23+0800\n"
+"POT-Creation-Date: 2016-02-06 20:21+0800\n"
 "PO-Revision-Date: 2012-08-11 16:26+0800\n"
 "Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
 "Language-Team: Chinese Simplified <kde-china@kde.org>\n"
@@ -17,8 +17,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: main.cpp:33
-msgid "(C) 2012 Ni Hui"
+#: main.cpp:39
+#, fuzzy
+msgid "(c) 2012-2016, Ni Hui"
 msgstr "(C) 2012 Ni Hui"
 
 #. i18n: file: amuledpage.ui:94
@@ -29,36 +30,36 @@ msgstr "(C) 2012 Ni Hui"
 msgid ":"
 msgstr ":"
 
-#: kamule.cpp:58
+#: kamule.cpp:56
 msgid "AMuled"
 msgstr "AMuled"
 
-#: sharedfilelistmodel.cpp:215
+#: sharedfilelistmodel.cpp:213
 msgid "Accept count"
 msgstr "接受数"
 
-#: downloadpage.cpp:52
+#: downloadpage.cpp:49
 msgid "Add Link"
 msgstr "添加链接"
 
-#: networkpage.cpp:46
+#: networkpage.cpp:45
 msgid "Add Server"
 msgstr "添加服务器"
 
-#: downloadlistmodel.cpp:241
+#: downloadlistmodel.cpp:238
 msgid "Allocating"
 msgstr "分配中"
 
-#: preferencepage.cpp:43
+#: preferencepage.cpp:42
 msgid "Apply"
 msgstr "应用"
 
-#: main.cpp:34
+#: main.cpp:40
 msgid "Author"
 msgstr "作者"
 
-#: downloadlistmodel.cpp:228 downloadpage.cpp:66 sharedfilelistmodel.cpp:184
-#: sharedfilepage.cpp:49
+#: downloadlistmodel.cpp:225 downloadpage.cpp:63 sharedfilelistmodel.cpp:182
+#: sharedfilepage.cpp:48
 msgid "Auto"
 msgstr "自动"
 
@@ -74,31 +75,31 @@ msgstr "自动下载优先级"
 msgid "Auto upload priority"
 msgstr "自动上传优先级"
 
-#: downloadlistmodel.cpp:217 sharedfilelistmodel.cpp:173
+#: downloadlistmodel.cpp:214 sharedfilelistmodel.cpp:171
 msgid "Auto[Auto]"
 msgstr "自动[自动]"
 
-#: downloadlistmodel.cpp:215 sharedfilelistmodel.cpp:171
+#: downloadlistmodel.cpp:212 sharedfilelistmodel.cpp:169
 msgid "Auto[High]"
 msgstr "自动[高]"
 
-#: downloadlistmodel.cpp:213 sharedfilelistmodel.cpp:169
+#: downloadlistmodel.cpp:210 sharedfilelistmodel.cpp:167
 msgid "Auto[Low]"
 msgstr "自动[低]"
 
-#: downloadlistmodel.cpp:214 sharedfilelistmodel.cpp:170
+#: downloadlistmodel.cpp:211 sharedfilelistmodel.cpp:168
 msgid "Auto[Normal]"
 msgstr "自动[普通]"
 
-#: downloadlistmodel.cpp:218 sharedfilelistmodel.cpp:174
+#: downloadlistmodel.cpp:215 sharedfilelistmodel.cpp:172
 msgid "Auto[Power Share]"
 msgstr "自动[强力共享]"
 
-#: downloadlistmodel.cpp:216 sharedfilelistmodel.cpp:172
+#: downloadlistmodel.cpp:213 sharedfilelistmodel.cpp:170
 msgid "Auto[Very High]"
 msgstr "自动[非常高]"
 
-#: downloadlistmodel.cpp:212 sharedfilelistmodel.cpp:168
+#: downloadlistmodel.cpp:209 sharedfilelistmodel.cpp:166
 msgid "Auto[Very Low]"
 msgstr "自动[非常低]"
 
@@ -114,7 +115,7 @@ msgstr "可用块："
 msgid "Can see shares: "
 msgstr "可以查看共享："
 
-#: searchpage.cpp:49
+#: searchpage.cpp:47
 msgid "Cancel"
 msgstr "取消"
 
@@ -134,27 +135,27 @@ msgstr "检查新版本"
 msgid "Client"
 msgstr "客户端"
 
-#: downloadlistmodel.cpp:240
+#: downloadlistmodel.cpp:237
 msgid "Complete"
 msgstr "完成"
 
-#: downloadlistmodel.cpp:239
+#: downloadlistmodel.cpp:236
 msgid "Completing"
 msgstr "完成中"
 
-#: amuledpage.cpp:48 networkpage.cpp:48
+#: amuledpage.cpp:47 networkpage.cpp:47
 msgid "Connect"
 msgstr "连接"
 
-#: amuledpage.cpp:52
+#: amuledpage.cpp:51
 msgid "Connect Ed2k"
 msgstr "连接 Ed2k"
 
-#: amuledpage.cpp:56
+#: amuledpage.cpp:55
 msgid "Connect Kad"
 msgstr "连接 Kad"
 
-#: mystatusbar.cpp:125
+#: mystatusbar.cpp:130
 msgid "Connecting"
 msgstr "连接中"
 
@@ -162,7 +163,7 @@ msgstr "连接中"
 msgid "Connection"
 msgstr "连接"
 
-#: downloadpage.cpp:64 searchpage.cpp:53 sharedfilepage.cpp:47
+#: downloadpage.cpp:61 searchpage.cpp:51 sharedfilepage.cpp:46
 msgid "Copy Ed2k"
 msgstr "复制 Ed2k"
 
@@ -170,7 +171,7 @@ msgstr "复制 Ed2k"
 msgid "Core tweak"
 msgstr "核心调节"
 
-#: amuledpage.cpp:169
+#: amuledpage.cpp:168
 msgid "Crashed"
 msgstr "已崩溃"
 
@@ -180,7 +181,7 @@ msgstr "已崩溃"
 msgid "Dead server retries: "
 msgstr "失败服务器重试次数："
 
-#: downloadpage.cpp:62
+#: downloadpage.cpp:59
 msgid "Delete"
 msgstr "删除"
 
@@ -192,19 +193,19 @@ msgstr "描述"
 msgid "Directory"
 msgstr "目录"
 
-#: networkpage.cpp:50
+#: networkpage.cpp:49
 msgid "Disconnect"
 msgstr "断开"
 
-#: amuledpage.cpp:54
+#: amuledpage.cpp:53
 msgid "Disconnect Ed2k"
 msgstr "断开 Ed2k"
 
-#: amuledpage.cpp:58
+#: amuledpage.cpp:57
 msgid "Disconnect Kad"
 msgstr "断开 Kad"
 
-#: mystatusbar.cpp:100 mystatusbar.cpp:101 mystatusbar.cpp:128
+#: mystatusbar.cpp:100 mystatusbar.cpp:101 mystatusbar.cpp:133
 msgid "Disconnected"
 msgstr "已断开"
 
@@ -212,12 +213,12 @@ msgstr "已断开"
 msgid "Down Speed"
 msgstr "下载速度"
 
-#: mystatusbar.cpp:99 mystatusbar.cpp:119
+#: mystatusbar.cpp:99 mystatusbar.cpp:124
 #, kde-format
 msgid "Down: %1"
 msgstr "下载：%1"
 
-#: kamule.cpp:67 searchpage.cpp:51
+#: kamule.cpp:65 searchpage.cpp:49
 msgid "Download"
 msgstr "下载"
 
@@ -233,7 +234,7 @@ msgstr "总下载："
 msgid "Download: "
 msgstr "下载："
 
-#: downloadlistmodel.cpp:246
+#: downloadlistmodel.cpp:243
 msgid "Downloading"
 msgstr "下载中"
 
@@ -243,7 +244,7 @@ msgstr "下载中"
 msgid "EC password"
 msgstr "EC 密码"
 
-#: mystatusbar.cpp:100 mystatusbar.cpp:122 mystatusbar.cpp:125
+#: mystatusbar.cpp:100 mystatusbar.cpp:127 mystatusbar.cpp:130
 #, kde-format
 msgid "ED2K: %1"
 msgstr "ED2K：%1"
@@ -260,7 +261,7 @@ msgstr "Ed2k 链接："
 msgid "Enable ICH"
 msgstr "启用 ICH"
 
-#: downloadlistmodel.cpp:237
+#: downloadlistmodel.cpp:234
 msgid "Error"
 msgstr "错误"
 
@@ -268,7 +269,7 @@ msgstr "错误"
 msgid "Failed"
 msgstr "失败"
 
-#: amuledpage.cpp:166
+#: amuledpage.cpp:165
 msgid "Failed to start"
 msgstr "启动失败"
 
@@ -282,7 +283,7 @@ msgstr "文件"
 msgid "File buffer: "
 msgstr "文件缓存："
 
-#: searchlistmodel.cpp:131 sharedfilelistmodel.cpp:211 uploadlistmodel.cpp:207
+#: searchlistmodel.cpp:130 sharedfilelistmodel.cpp:209 uploadlistmodel.cpp:207
 msgid "Filename"
 msgstr "文件名"
 
@@ -298,12 +299,12 @@ msgstr "文件名："
 msgid "Files"
 msgstr "文件"
 
-#: mystatusbar.cpp:97 mystatusbar.cpp:117
+#: mystatusbar.cpp:97 mystatusbar.cpp:122
 #, kde-format
 msgid "Files: E %1 K %2"
 msgstr "文件：E %1 K %2"
 
-#: mystatusbar.cpp:131
+#: mystatusbar.cpp:136
 msgid "Firewalled"
 msgstr "有防火墙"
 
@@ -323,12 +324,12 @@ msgstr "常规"
 msgid "Global"
 msgstr "全局"
 
-#: downloadlistmodel.cpp:236
+#: downloadlistmodel.cpp:233
 msgid "Hashing"
 msgstr "校验中"
 
-#: downloadlistmodel.cpp:226 downloadpage.cpp:70 sharedfilelistmodel.cpp:182
-#: sharedfilepage.cpp:55
+#: downloadlistmodel.cpp:223 downloadpage.cpp:67 sharedfilelistmodel.cpp:180
+#: sharedfilepage.cpp:54
 msgid "High"
 msgstr "高"
 
@@ -344,25 +345,25 @@ msgstr "IP:端口"
 msgid "Incoming directory: "
 msgstr "下载目录："
 
-#: downloadpage.cpp:54 uploadpage.cpp:46
+#: downloadpage.cpp:51 uploadpage.cpp:45
 msgid "Info"
 msgstr "信息"
 
-#: mystatusbar.cpp:101 mystatusbar.cpp:128 mystatusbar.cpp:131
-#: mystatusbar.cpp:134
+#: mystatusbar.cpp:101 mystatusbar.cpp:133 mystatusbar.cpp:136
+#: mystatusbar.cpp:139
 #, kde-format
 msgid "KAD: %1"
 msgstr "KAD：%1"
 
-#: main.cpp:32
+#: main.cpp:38
 msgid "KDE aMule"
 msgstr "KDE aMule"
 
-#: kamule.cpp:96
+#: kamule.cpp:94
 msgid "KDE aMule Client"
 msgstr "KDE aMule 客户端"
 
-#: kamule.cpp:93 kamule.cpp:95 main.cpp:31
+#: kamule.cpp:91 kamule.cpp:93 main.cpp:37
 msgid "KaMule"
 msgstr "KaMule"
 
@@ -390,7 +391,7 @@ msgstr "最后看见完整文件："
 msgid "Local"
 msgstr "本地"
 
-#: amuledpage.cpp:50
+#: amuledpage.cpp:49
 msgid "Login"
 msgstr "登录"
 
@@ -400,8 +401,8 @@ msgstr "登录"
 msgid "Lost corruption: "
 msgstr "损坏丢失："
 
-#: downloadlistmodel.cpp:224 downloadpage.cpp:74 sharedfilelistmodel.cpp:180
-#: sharedfilepage.cpp:59
+#: downloadlistmodel.cpp:221 downloadpage.cpp:71 sharedfilelistmodel.cpp:178
+#: sharedfilepage.cpp:58
 msgid "Low"
 msgstr "低"
 
@@ -437,7 +438,7 @@ msgstr "最大："
 msgid "Minimum free space: "
 msgstr "最小剩余空间："
 
-#: downloadlistmodel.cpp:269 serverlistmodel.cpp:162
+#: downloadlistmodel.cpp:266 serverlistmodel.cpp:162
 msgid "Name"
 msgstr "名称"
 
@@ -447,11 +448,11 @@ msgstr "名称"
 msgid "Name: "
 msgstr "名称："
 
-#: kamule.cpp:61
+#: kamule.cpp:59
 msgid "Network"
 msgstr "网络"
 
-#: main.cpp:34
+#: main.cpp:40
 msgid "Ni Hui"
 msgstr "Ni Hui"
 
@@ -459,20 +460,20 @@ msgstr "Ni Hui"
 msgid "No"
 msgstr "否"
 
-#: downloadlistmodel.cpp:225 downloadpage.cpp:72 sharedfilelistmodel.cpp:181
-#: sharedfilepage.cpp:57
+#: downloadlistmodel.cpp:222 downloadpage.cpp:69 sharedfilelistmodel.cpp:179
+#: sharedfilepage.cpp:56
 msgid "Normal"
 msgstr "普通"
 
-#: mystatusbar.cpp:134
+#: mystatusbar.cpp:139
 msgid "Open"
 msgstr "打开"
 
-#: downloadpage.cpp:56
+#: downloadpage.cpp:53
 msgid "Pause"
 msgstr "暂停"
 
-#: downloadlistmodel.cpp:238
+#: downloadlistmodel.cpp:235
 msgid "Paused"
 msgstr "已暂停"
 
@@ -480,16 +481,16 @@ msgstr "已暂停"
 msgid "Ping"
 msgstr "Ping"
 
-#: downloadlistmodel.cpp:229 sharedfilelistmodel.cpp:185 sharedfilepage.cpp:51
+#: downloadlistmodel.cpp:226 sharedfilelistmodel.cpp:183 sharedfilepage.cpp:50
 msgid "Power Share"
 msgstr "强力共享"
 
-#: kamule.cpp:76
+#: kamule.cpp:74
 msgid "Preference"
 msgstr "首选项"
 
-#: downloadlistmodel.cpp:273 serverlistmodel.cpp:168
-#: sharedfilelistmodel.cpp:213
+#: downloadlistmodel.cpp:270 serverlistmodel.cpp:168
+#: sharedfilelistmodel.cpp:211
 msgid "Priority"
 msgstr "优先级"
 
@@ -499,15 +500,15 @@ msgstr "优先级"
 msgid "Priority: "
 msgstr "优先级："
 
-#: downloadlistmodel.cpp:275 sharedfilelistmodel.cpp:216
+#: downloadlistmodel.cpp:272 sharedfilelistmodel.cpp:214
 msgid "Progress"
 msgstr "进度"
 
-#: amuledpage.cpp:178
+#: amuledpage.cpp:177
 msgid "Read error"
 msgstr "读取错误"
 
-#: networkpage.cpp:52
+#: networkpage.cpp:51
 msgid "Remove"
 msgstr "删除"
 
@@ -517,19 +518,19 @@ msgstr "删除"
 msgid "Remove dead"
 msgstr "删除失败的服务器"
 
-#: sharedfilelistmodel.cpp:214
+#: sharedfilelistmodel.cpp:212
 msgid "Require count"
 msgstr "请求数"
 
-#: preferencepage.cpp:41
+#: preferencepage.cpp:40
 msgid "Reset"
 msgstr "重置"
 
-#: downloadpage.cpp:58
+#: downloadpage.cpp:55
 msgid "Resume"
 msgstr "恢复"
 
-#: kamule.cpp:64 searchpage.cpp:47
+#: kamule.cpp:62 searchpage.cpp:45
 msgid "Search"
 msgstr "搜索"
 
@@ -561,19 +562,19 @@ msgstr "服务器名称"
 msgid "Server: "
 msgstr "服务器："
 
-#: downloadpage.cpp:260 sharedfilepage.cpp:159
+#: downloadpage.cpp:257 sharedfilepage.cpp:158
 msgid "Set priority"
 msgstr "设定优先级"
 
-#: kamule.cpp:73
+#: kamule.cpp:71
 msgid "Shared files"
 msgstr "共享文件"
 
-#: searchlistmodel.cpp:132 sharedfilelistmodel.cpp:212
+#: searchlistmodel.cpp:131 sharedfilelistmodel.cpp:210
 msgid "Size"
 msgstr "大小"
 
-#: downloadlistmodel.cpp:271
+#: downloadlistmodel.cpp:268
 msgid "Size done"
 msgstr "已完成"
 
@@ -583,7 +584,7 @@ msgstr "已完成"
 msgid "Size done: "
 msgstr "已完成："
 
-#: downloadlistmodel.cpp:270
+#: downloadlistmodel.cpp:267
 msgid "Size full"
 msgstr "总大小"
 
@@ -615,11 +616,11 @@ msgstr "软件"
 msgid "Software: "
 msgstr "软件："
 
-#: searchlistmodel.cpp:134
+#: searchlistmodel.cpp:133
 msgid "Source Count (XFER)"
 msgstr "来源数(XFER)"
 
-#: downloadlistmodel.cpp:272
+#: downloadlistmodel.cpp:269
 msgid "Speed"
 msgstr "速度"
 
@@ -627,11 +628,11 @@ msgstr "速度"
 msgid "Static"
 msgstr "静态"
 
-#: downloadlistmodel.cpp:274 searchlistmodel.cpp:133
+#: downloadlistmodel.cpp:271 searchlistmodel.cpp:132
 msgid "Status"
 msgstr "状态"
 
-#: downloadpage.cpp:60
+#: downloadpage.cpp:57
 msgid "Stop"
 msgstr "停止"
 
@@ -647,7 +648,7 @@ msgstr "TCP 端口："
 msgid "Temp directory: "
 msgstr "临时目录："
 
-#: amuledpage.cpp:172
+#: amuledpage.cpp:171
 msgid "Timed out"
 msgstr "已超时"
 
@@ -657,7 +658,7 @@ msgstr "已超时"
 msgid "UDP port: "
 msgstr "UDP 端口："
 
-#: amuledpage.cpp:182
+#: amuledpage.cpp:181
 msgid "Unknown error"
 msgstr "未知错误"
 
@@ -665,12 +666,12 @@ msgstr "未知错误"
 msgid "Up Speed"
 msgstr "上传速度"
 
-#: mystatusbar.cpp:98 mystatusbar.cpp:118
+#: mystatusbar.cpp:98 mystatusbar.cpp:123
 #, kde-format
 msgid "Up: %1"
 msgstr "上传：%1"
 
-#: networkpage.cpp:44
+#: networkpage.cpp:43
 msgid "Update From Url"
 msgstr "从 Url 更新"
 
@@ -682,7 +683,7 @@ msgstr "从 Url 更新"
 msgid "Update URL: "
 msgstr "更新 URL："
 
-#: kamule.cpp:70
+#: kamule.cpp:68
 msgid "Upload"
 msgstr "上传"
 
@@ -746,7 +747,7 @@ msgstr "用户昵称："
 msgid "Users"
 msgstr "用户"
 
-#: mystatusbar.cpp:96 mystatusbar.cpp:116
+#: mystatusbar.cpp:96 mystatusbar.cpp:121
 #, kde-format
 msgid "Users: E %1 K %2"
 msgstr "用户：E %1 K %2"
@@ -759,25 +760,25 @@ msgstr "最大用户"
 msgid "Version"
 msgstr "版本"
 
-#: downloadlistmodel.cpp:227 downloadpage.cpp:68 sharedfilelistmodel.cpp:183
-#: sharedfilepage.cpp:53
+#: downloadlistmodel.cpp:224 downloadpage.cpp:65 sharedfilelistmodel.cpp:181
+#: sharedfilepage.cpp:52
 msgid "Very High"
 msgstr "非常高"
 
-#: downloadlistmodel.cpp:223 downloadpage.cpp:76 sharedfilelistmodel.cpp:179
-#: sharedfilepage.cpp:61
+#: downloadlistmodel.cpp:220 downloadpage.cpp:73 sharedfilelistmodel.cpp:177
+#: sharedfilepage.cpp:60
 msgid "Very Low"
 msgstr "非常低"
 
-#: downloadlistmodel.cpp:246
+#: downloadlistmodel.cpp:243
 msgid "Waiting"
 msgstr "等待中"
 
-#: downloadlistmodel.cpp:235
+#: downloadlistmodel.cpp:232
 msgid "Waiting for hash"
 msgstr "等待校验中"
 
-#: amuledpage.cpp:175
+#: amuledpage.cpp:174
 msgid "Write error"
 msgstr "写入错误"
 
@@ -785,25 +786,25 @@ msgstr "写入错误"
 msgid "Yes"
 msgstr "是"
 
-#: amuledpage.cpp:146
+#: amuledpage.cpp:145
 #, kde-format
 msgid "[Daemon] %1"
 msgstr "[后端] %1"
 
-#: amuledpage.cpp:185 amuledpage.cpp:200
+#: amuledpage.cpp:184 amuledpage.cpp:199
 #, kde-format
 msgid "[KaMule] %1"
 msgstr "[KaMule] %1"
 
-#: amuledpage.cpp:190
+#: amuledpage.cpp:189
 msgid "[KaMule] Connected to amule daemon"
 msgstr "[KaMule] 已连接 amule 后台守护进程"
 
-#: amuledpage.cpp:195
+#: amuledpage.cpp:194
 msgid "[KaMule] Disconnected to amule daemon"
 msgstr "[KaMule] 已断开 amule 后台守护进程"
 
-#: amuledpage.cpp:121
+#: amuledpage.cpp:120
 msgid "[KaMule] Logined"
 msgstr "[KaMule] 已登录"
 

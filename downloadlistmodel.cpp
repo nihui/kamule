@@ -23,14 +23,11 @@
 
 #include <QImage>
 #include <QPainter>
+#include <QUrl>
 
-#include <KDebug>
-#include <KIcon>
 #include <KIconLoader>
 #include <kio/global.h>
-#include <KLocale>
-#include <KMimeType>
-#include <KUrl>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 
@@ -107,10 +104,10 @@ PartfileInfo QECTag2PartfileInfo(const QECTag& t, bool* ok)
                 pfi.reqstatus = subtag.toByteArray();
                 break;
             case EC_TAG_PARTFILE_SOURCE_NAMES:
-//                 kWarning() << "partfile source names" << subtag;
+//                 qWarning() << "partfile source names" << subtag;
                 break;
             case EC_TAG_PARTFILE_COMMENTS:
-//                 kWarning() << "partfile comments" << subtag.toMd5().toHex();
+//                 qWarning() << "partfile comments" << subtag.toMd5().toHex();
                 break;
             case EC_TAG_PARTFILE_STOPPED:
                 pfi.stopped = subtag.toUInt8();
@@ -128,7 +125,7 @@ PartfileInfo QECTag2PartfileInfo(const QECTag& t, bool* ok)
                 pfi.savedICH = subtag.toUInt32();
                 break;
             case EC_TAG_PARTFILE_SOURCE_NAMES_COUNTS:
-//                 kWarning() << "partfile source names count" << subtag;
+//                 qWarning() << "partfile source names count" << subtag;
                 break;
             case EC_TAG_PARTFILE_AVAILABLE_PARTS:
                 pfi.availableparts = subtag.toUInt16();
@@ -140,8 +137,8 @@ PartfileInfo QECTag2PartfileInfo(const QECTag& t, bool* ok)
                 pfi.shared = subtag.toUInt8();
                 break;
             case EC_TAG_PARTFILE_HASHED_PART_COUNT:
-//                 kWarning() << subtag;
-//                             kWarning() << "partfile hashed part count" << subtag.toUInt8();
+//                 qWarning() << subtag;
+//                 qWarning() << "partfile hashed part count" << subtag.toUInt8();
                 break;
             case EC_TAG_PARTFILE_A4AFAUTO:
                 pfi.A4AFauto = subtag.toUInt8();
@@ -150,7 +147,7 @@ PartfileInfo QECTag2PartfileInfo(const QECTag& t, bool* ok)
                 pfi.A4AFsources = subtag.toMd5().toHex();
                 break;
             default:
-//                 kWarning() << subtag;
+//                 qWarning() << subtag;
                 break;
         }
     }
@@ -253,7 +250,7 @@ QVariant DownloadListModel::data(const QModelIndex& index, int role) const
 
     if (role == Qt::DecorationRole && index.column() == 0) {
         const PartfileInfo& pfi = m_files.at(index.row());
-        QString iconName = KMimeType::iconNameForUrl(KUrl(pfi.name));
+        QString iconName = KIO::iconNameForUrl(QUrl::fromLocalFile(pfi.name));
         return KIconLoader::global()->loadMimeTypeIcon(iconName, KIconLoader::Small);
     }
 

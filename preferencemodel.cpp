@@ -21,8 +21,8 @@
 
 #include "preferencemodel.h"
 
-#include <KIcon>
-#include <KLocale>
+#include <QIcon>
+#include <KLocalizedString>
 
 #include "preference/generalpage.h"
 #include "preference/connectionpage.h"
@@ -68,12 +68,12 @@ QVariant PreferenceModel::data(const QModelIndex& index, int role) const
 
     if (role == Qt::DecorationRole) {
         switch (index.row()) {
-            case 0: return KIcon("configure");
-            case 1: return KIcon("network-connect");
-            case 2: return KIcon("network-server");
-            case 3: return KIcon("document-properties");
-            case 4: return KIcon("document-open-folder");
-            case 5: return KIcon("edit-bomb");
+            case 0: return QIcon::fromTheme("configure");
+            case 1: return QIcon::fromTheme("network-connect");
+            case 2: return QIcon::fromTheme("network-server");
+            case 3: return QIcon::fromTheme("document-properties");
+            case 4: return QIcon::fromTheme("document-open-folder");
+            case 5: return QIcon::fromTheme("edit-bomb");
         }
     }
 

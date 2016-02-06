@@ -23,13 +23,12 @@
 
 #include <QAction>
 #include <QHostAddress>
+#include <QIcon>
+#include <QMenu>
 #include <QSortFilterProxyModel>
 
-#include <KDebug>
-#include <KIcon>
 #include <kio/global.h>
-#include <KLocale>
-#include <KMenu>
+#include <KLocalizedString>
 
 #include "qecamule.h"
 
@@ -43,7 +42,7 @@ UploadPageWidget::UploadPageWidget(QWidget* parent)
     setupUi(this);
 
     // set action
-    infoAct = new QAction(KIcon("preferences-desktop-notification"), i18n("Info"), this);
+    infoAct = new QAction(QIcon::fromTheme("preferences-desktop-notification"), i18n("Info"), this);
     connect(infoAct, SIGNAL(triggered()), this, SLOT(slotInfo()));
 
     // set model
@@ -103,7 +102,7 @@ void UploadPageWidget::showContextMenu(const QPoint& pos)
     if (!index.isValid())
         return;
 
-    KMenu menu;
+    QMenu menu;
     menu.addAction(infoAct);
     menu.exec(m_uploadListView->viewport()->mapToGlobal(pos));
 }

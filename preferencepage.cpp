@@ -21,9 +21,8 @@
 
 #include "preferencepage.h"
 
-#include <KDebug>
-#include <KIcon>
-#include <KLocale>
+#include <QIcon>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 
@@ -38,9 +37,9 @@ PreferencePageWidget::PreferencePageWidget(QWidget* parent)
     setupUi(this);
 
     // set action
-    resetAct = new QAction(KIcon("edit-undo"), i18n("Reset"), this);
+    resetAct = new QAction(QIcon::fromTheme("edit-undo"), i18n("Reset"), this);
     connect(resetAct, SIGNAL(triggered()), this, SLOT(slotReset()));
-    applyAct = new QAction(KIcon("dialog-ok-apply"), i18n("Apply"), this);
+    applyAct = new QAction(QIcon::fromTheme("dialog-ok-apply"), i18n("Apply"), this);
     connect(applyAct, SIGNAL(triggered()), this, SLOT(slotApply()));
 
     // set model

@@ -24,13 +24,11 @@
 #include <QAction>
 #include <QApplication>
 #include <QClipboard>
+#include <QMenu>
 #include <QSortFilterProxyModel>
 #include <QTimer>
 
-#include <KDebug>
-#include <KIcon>
-#include <KLocale>
-#include <KMenu>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 
@@ -44,13 +42,13 @@ SearchPageWidget::SearchPageWidget(QWidget* parent)
     setupUi(this);
 
     // set action
-    searchAct = new QAction(KIcon("edit-find"), i18n("Search"), this);
+    searchAct = new QAction(QIcon::fromTheme("edit-find"), i18n("Search"), this);
     connect(searchAct, SIGNAL(triggered()), this, SLOT(slotSearch()));
-    cancelAct = new QAction(KIcon("process-stop"), i18n("Cancel"), this);
+    cancelAct = new QAction(QIcon::fromTheme("process-stop"), i18n("Cancel"), this);
     connect(cancelAct, SIGNAL(triggered()), this, SLOT(slotCancel()));
-    downloadAct = new QAction(KIcon("download"), i18n("Download"), this);
+    downloadAct = new QAction(QIcon::fromTheme("download"), i18n("Download"), this);
     connect(downloadAct, SIGNAL(triggered()), this, SLOT(slotDownload()));
-    copyLinkAct = new QAction(KIcon("document-export"), i18n("Copy Ed2k"), this);
+    copyLinkAct = new QAction(QIcon::fromTheme("document-export"), i18n("Copy Ed2k"), this);
     connect(copyLinkAct, SIGNAL(triggered()), this, SLOT(slotCopyLink()));
 
     // set model
@@ -88,7 +86,7 @@ void SearchPageWidget::resizeColumns()
 
 void SearchPageWidget::handlePacket(const QECPacket& p)
 {
-    kWarning();
+//     qWarning();
     const QECTag& tag_searchstatus = p.findTag(EC_TAG_SEARCH_STATUS);
     if (tag_searchstatus.isNull()) {
         return;

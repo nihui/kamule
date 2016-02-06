@@ -22,12 +22,11 @@
 #include "networkpage.h"
 
 #include <QAction>
+#include <QIcon>
+#include <QMenu>
 #include <QSortFilterProxyModel>
 
-#include <KDebug>
-#include <KIcon>
-#include <KLocale>
-#include <KMenu>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 
@@ -41,15 +40,15 @@ NetworkPageWidget::NetworkPageWidget(QWidget* parent)
     setupUi(this);
 
     // set action
-    updateFromUrlAct = new QAction(KIcon("view-refresh"), i18n("Update From Url"), this);
+    updateFromUrlAct = new QAction(QIcon::fromTheme("view-refresh"), i18n("Update From Url"), this);
     connect(updateFromUrlAct, SIGNAL(triggered()), this, SLOT(slotUpdateFromUrl()));
-    addServerAct = new QAction(KIcon("list-add"), i18n("Add Server"), this);
+    addServerAct = new QAction(QIcon::fromTheme("list-add"), i18n("Add Server"), this);
     connect(addServerAct, SIGNAL(triggered()), this, SLOT(slotAddServer()));
-    connectAct = new QAction(KIcon("network-connect"), i18n("Connect"), this);
+    connectAct = new QAction(QIcon::fromTheme("network-connect"), i18n("Connect"), this);
     connect(connectAct, SIGNAL(triggered()), this, SLOT(slotConnect()));
-    disconnectAct = new QAction(KIcon("network-disconnect"), i18n("Disconnect"), this);
+    disconnectAct = new QAction(QIcon::fromTheme("network-disconnect"), i18n("Disconnect"), this);
     connect(disconnectAct, SIGNAL(triggered()), this, SLOT(slotDisconnect()));
-    removeAct = new QAction(KIcon("list-remove"), i18n("Remove"), this);
+    removeAct = new QAction(QIcon::fromTheme("list-remove"), i18n("Remove"), this);
     connect(removeAct, SIGNAL(triggered()), this, SLOT(slotRemove()));
 
     // set model
@@ -137,7 +136,7 @@ void NetworkPageWidget::showContextMenu(const QPoint& pos)
     if (!index.isValid())
         return;
 
-    KMenu menu;
+    QMenu menu;
     menu.addAction(connectAct);
     menu.addAction(disconnectAct);
     menu.addAction(removeAct);

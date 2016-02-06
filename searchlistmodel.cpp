@@ -21,13 +21,12 @@
 
 #include "searchlistmodel.h"
 
-#include <KDebug>
-#include <KIcon>
+#include <QUrl>
+#include <QPixmap>
+
 #include <KIconLoader>
 #include <kio/global.h>
-#include <KLocale>
-#include <KMimeType>
-#include <KUrl>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 
@@ -59,7 +58,7 @@ SearchFileInfo QECTag2SearchFileInfo(const QECTag& t, bool* ok)
                 sfi.hash = subtag.toMd5();
                 break;
             default:
-//                 kWarning() << subtag;
+//                 qWarning() << subtag;
                 break;
         }
     }
@@ -115,7 +114,7 @@ QVariant SearchListModel::data(const QModelIndex& index, int role) const
 
     if (role == Qt::DecorationRole && index.column() == 0) {
         const SearchFileInfo& sfi = m_files.at(index.row());
-        QString iconName = KMimeType::iconNameForUrl(KUrl(sfi.name));
+        QString iconName = KIO::iconNameForUrl(QUrl::fromLocalFile(sfi.name));
         return KIconLoader::global()->loadMimeTypeIcon(iconName, KIconLoader::Small);
     }
 

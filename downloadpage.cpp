@@ -28,11 +28,8 @@
 #include <QMenu>
 #include <QSortFilterProxyModel>
 
-#include <KDebug>
-#include <KDialog>
-#include <KIcon>
 #include <kio/global.h>
-#include <KLocale>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 #include "Constants.h"
@@ -49,19 +46,19 @@ DownloadPageWidget::DownloadPageWidget(QWidget* parent)
     setupUi(this);
 
     // set action
-    addLinkAct = new QAction(KIcon("list-add"), i18n("Add Link"), this);
+    addLinkAct = new QAction(QIcon::fromTheme("list-add"), i18n("Add Link"), this);
     connect(addLinkAct, SIGNAL(triggered()), this, SLOT(slotAddLink()));
-    infoAct = new QAction(KIcon("preferences-desktop-notification"), i18n("Info"), this);
+    infoAct = new QAction(QIcon::fromTheme("preferences-desktop-notification"), i18n("Info"), this);
     connect(infoAct, SIGNAL(triggered()), this, SLOT(slotInfo()));
-    pauseAct = new QAction(KIcon("media-playback-pause"), i18n("Pause"), this);
+    pauseAct = new QAction(QIcon::fromTheme("media-playback-pause"), i18n("Pause"), this);
     connect(pauseAct, SIGNAL(triggered()), this, SLOT(slotPause()));
-    resumeAct = new QAction(KIcon("media-playback-start"), i18n("Resume"), this);
+    resumeAct = new QAction(QIcon::fromTheme("media-playback-start"), i18n("Resume"), this);
     connect(resumeAct, SIGNAL(triggered()), this, SLOT(slotResume()));
-    stopAct = new QAction(KIcon("media-playback-stop"), i18n("Stop"), this);
+    stopAct = new QAction(QIcon::fromTheme("media-playback-stop"), i18n("Stop"), this);
     connect(stopAct, SIGNAL(triggered()), this, SLOT(slotStop()));
-    deleteAct = new QAction(KIcon("edit-delete"), i18n("Delete"), this);
+    deleteAct = new QAction(QIcon::fromTheme("edit-delete"), i18n("Delete"), this);
     connect(deleteAct, SIGNAL(triggered()), this, SLOT(slotDelete()));
-    copyLinkAct = new QAction(KIcon("document-export"), i18n("Copy Ed2k"), this);
+    copyLinkAct = new QAction(QIcon::fromTheme("document-export"), i18n("Copy Ed2k"), this);
     connect(copyLinkAct, SIGNAL(triggered()), this, SLOT(slotCopyLink()));
     priorityAutoAct = new QAction(i18n("Auto"), this);
     priorityAutoAct->setCheckable(true);
@@ -257,7 +254,7 @@ void DownloadPageWidget::showContextMenu(const QPoint& pos)
     menu.addAction(stopAct);
     menu.addAction(deleteAct);
     menu.addAction(copyLinkAct);
-    QMenu* priorityMenu = menu.addMenu(KIcon("flag"), i18n("Set priority"));
+    QMenu* priorityMenu = menu.addMenu(QIcon::fromTheme("flag"), i18n("Set priority"));
     priorityMenu->addAction(priorityAutoAct);
     priorityMenu->addAction(priorityVeryHighAct);
     priorityMenu->addAction(priorityHighAct);

@@ -19,26 +19,45 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <KApplication>
+#include <QApplication>
+#include <QCommandLineParser>
+#include <QIcon>
+
 #include <KAboutData>
-#include <KCmdLineArgs>
-#include <KLocale>
+#include <KLocalizedString>
 
 #include "kamule.h"
 
 int main(int argc, char **argv)
 {
-    KAboutData about("kamule", 0, ki18n("KaMule"),
-                     "0.5", ki18n("KDE aMule"),
-                     KAboutData::License_GPL, ki18n("(C) 2012 Ni Hui"));
-    about.addAuthor(ki18n("Ni Hui"), ki18n("Author"), "shuizhuyuanluo@126.com");
+    QApplication app(argc, argv);
 
-    KCmdLineArgs::init(argc, argv, &about);
+    KLocalizedString::setApplicationDomain("kamule");
 
-    KApplication app;
+    KAboutData aboutData("kamule", i18n("KaMule"),
+                         "0.91", i18n("KDE aMule"),
+                         KAboutLicense::GPL, i18n("(c) 2012-2016, Ni Hui"));
+    aboutData.addAuthor(i18n("Ni Hui"), i18n("Author"), "shuizhuyuanluo@126.com");
+    aboutData.setOrganizationDomain(QByteArray("kde.org"));
+    aboutData.setProductName(QByteArray("kamule"));
 
-    KaMule* kamule = new KaMule;
-    kamule->show();
+    KAboutData::setApplicationData(aboutData);
+
+    app.setApplicationName(aboutData.componentName());
+    app.setOrganizationDomain(aboutData.organizationDomain());
+    app.setApplicationVersion(aboutData.version());
+    app.setApplicationDisplayName(aboutData.displayName());
+    app.setWindowIcon(QIcon::fromTheme("kamule"));
+
+    QCommandLineParser parser;
+    parser.addVersionOption();
+    parser.addHelpOption();
+    aboutData.setupCommandLine(&parser);
+    parser.process(app);
+    aboutData.processCommandLine(&parser);
+
+    KaMule kamule;
+    kamule.show();
 
     return app.exec();
 }

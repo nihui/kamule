@@ -22,10 +22,10 @@
 #include "serverlistmodel.h"
 
 #include <QHostAddress>
-#include <KDebug>
-#include <KIcon>
+#include <QIcon>
+
 #include <kio/global.h>
-#include <KLocale>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 
@@ -75,7 +75,7 @@ static ServerInfo QECTag2ServerInfo(const QECTag& t, bool* ok)
                 si.version = subtag.toString();
                 break;
             default:
-//                 kWarning() << subtag;
+//                 qWarning() << subtag;
                 break;
         }
     }
@@ -146,7 +146,7 @@ QVariant ServerListModel::data(const QModelIndex& index, int role) const
 
     if (role == Qt::DecorationRole) {
         if (index.column() == 0) {
-            return KIcon("network-server");
+            return QIcon::fromTheme("network-server");
         }
     }
 

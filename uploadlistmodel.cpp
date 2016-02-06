@@ -21,10 +21,10 @@
 
 #include "uploadlistmodel.h"
 
-#include <KDebug>
-#include <KIcon>
+#include <QIcon>
+
 #include <kio/global.h>
-#include <KLocale>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 
@@ -134,7 +134,7 @@ ClientInfo QECTag2ClientInfo(const QECTag& t, bool* ok)
                 ci.remotefilename = subtag.toString();
                 break;
             default:
-//                 kWarning() << subtag;
+//                 qWarning() << subtag;
                 break;
         }
     }
@@ -191,7 +191,7 @@ QVariant UploadListModel::data(const QModelIndex& index, int role) const
     }
 
     if (role == Qt::DecorationRole && index.column() == 0) {
-        return KIcon("im-user");
+        return QIcon::fromTheme("im-user");
     }
 
     return QVariant();

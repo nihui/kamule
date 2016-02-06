@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-11 16:23+0800\n"
+"POT-Creation-Date: 2016-02-06 20:21+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,347 +17,347 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: amuledpage.cpp:48 networkpage.cpp:48
+#: amuledpage.cpp:47 networkpage.cpp:47
 msgid "Connect"
 msgstr ""
 
-#: amuledpage.cpp:50
+#: amuledpage.cpp:49
 msgid "Login"
 msgstr ""
 
-#: amuledpage.cpp:52
+#: amuledpage.cpp:51
 msgid "Connect Ed2k"
 msgstr ""
 
-#: amuledpage.cpp:54
+#: amuledpage.cpp:53
 msgid "Disconnect Ed2k"
 msgstr ""
 
-#: amuledpage.cpp:56
+#: amuledpage.cpp:55
 msgid "Connect Kad"
 msgstr ""
 
-#: amuledpage.cpp:58
+#: amuledpage.cpp:57
 msgid "Disconnect Kad"
 msgstr ""
 
-#: amuledpage.cpp:121
+#: amuledpage.cpp:120
 msgid "[KaMule] Logined"
 msgstr ""
 
-#: amuledpage.cpp:146
+#: amuledpage.cpp:145
 #, kde-format
 msgid "[Daemon] %1"
 msgstr ""
 
-#: amuledpage.cpp:166
+#: amuledpage.cpp:165
 msgid "Failed to start"
 msgstr ""
 
-#: amuledpage.cpp:169
+#: amuledpage.cpp:168
 msgid "Crashed"
 msgstr ""
 
-#: amuledpage.cpp:172
+#: amuledpage.cpp:171
 msgid "Timed out"
 msgstr ""
 
-#: amuledpage.cpp:175
+#: amuledpage.cpp:174
 msgid "Write error"
 msgstr ""
 
-#: amuledpage.cpp:178
+#: amuledpage.cpp:177
 msgid "Read error"
 msgstr ""
 
-#: amuledpage.cpp:182
+#: amuledpage.cpp:181
 msgid "Unknown error"
 msgstr ""
 
-#: amuledpage.cpp:185 amuledpage.cpp:200
+#: amuledpage.cpp:184 amuledpage.cpp:199
 #, kde-format
 msgid "[KaMule] %1"
 msgstr ""
 
-#: amuledpage.cpp:190
+#: amuledpage.cpp:189
 msgid "[KaMule] Connected to amule daemon"
 msgstr ""
 
-#: amuledpage.cpp:195
+#: amuledpage.cpp:194
 msgid "[KaMule] Disconnected to amule daemon"
 msgstr ""
 
-#: downloadlistmodel.cpp:212 sharedfilelistmodel.cpp:168
+#: downloadlistmodel.cpp:209 sharedfilelistmodel.cpp:166
 msgid "Auto[Very Low]"
 msgstr ""
 
-#: downloadlistmodel.cpp:213 sharedfilelistmodel.cpp:169
+#: downloadlistmodel.cpp:210 sharedfilelistmodel.cpp:167
 msgid "Auto[Low]"
 msgstr ""
 
-#: downloadlistmodel.cpp:214 sharedfilelistmodel.cpp:170
+#: downloadlistmodel.cpp:211 sharedfilelistmodel.cpp:168
 msgid "Auto[Normal]"
 msgstr ""
 
-#: downloadlistmodel.cpp:215 sharedfilelistmodel.cpp:171
+#: downloadlistmodel.cpp:212 sharedfilelistmodel.cpp:169
 msgid "Auto[High]"
 msgstr ""
 
-#: downloadlistmodel.cpp:216 sharedfilelistmodel.cpp:172
+#: downloadlistmodel.cpp:213 sharedfilelistmodel.cpp:170
 msgid "Auto[Very High]"
 msgstr ""
 
-#: downloadlistmodel.cpp:217 sharedfilelistmodel.cpp:173
+#: downloadlistmodel.cpp:214 sharedfilelistmodel.cpp:171
 msgid "Auto[Auto]"
 msgstr ""
 
-#: downloadlistmodel.cpp:218 sharedfilelistmodel.cpp:174
+#: downloadlistmodel.cpp:215 sharedfilelistmodel.cpp:172
 msgid "Auto[Power Share]"
 msgstr ""
 
-#: downloadlistmodel.cpp:223 downloadpage.cpp:76 sharedfilelistmodel.cpp:179
-#: sharedfilepage.cpp:61
+#: downloadlistmodel.cpp:220 downloadpage.cpp:73 sharedfilelistmodel.cpp:177
+#: sharedfilepage.cpp:60
 msgid "Very Low"
 msgstr ""
 
-#: downloadlistmodel.cpp:224 downloadpage.cpp:74 sharedfilelistmodel.cpp:180
-#: sharedfilepage.cpp:59
+#: downloadlistmodel.cpp:221 downloadpage.cpp:71 sharedfilelistmodel.cpp:178
+#: sharedfilepage.cpp:58
 msgid "Low"
 msgstr ""
 
-#: downloadlistmodel.cpp:225 downloadpage.cpp:72 sharedfilelistmodel.cpp:181
-#: sharedfilepage.cpp:57
+#: downloadlistmodel.cpp:222 downloadpage.cpp:69 sharedfilelistmodel.cpp:179
+#: sharedfilepage.cpp:56
 msgid "Normal"
 msgstr ""
 
-#: downloadlistmodel.cpp:226 downloadpage.cpp:70 sharedfilelistmodel.cpp:182
-#: sharedfilepage.cpp:55
+#: downloadlistmodel.cpp:223 downloadpage.cpp:67 sharedfilelistmodel.cpp:180
+#: sharedfilepage.cpp:54
 msgid "High"
 msgstr ""
 
-#: downloadlistmodel.cpp:227 downloadpage.cpp:68 sharedfilelistmodel.cpp:183
-#: sharedfilepage.cpp:53
+#: downloadlistmodel.cpp:224 downloadpage.cpp:65 sharedfilelistmodel.cpp:181
+#: sharedfilepage.cpp:52
 msgid "Very High"
 msgstr ""
 
-#: downloadlistmodel.cpp:228 downloadpage.cpp:66 sharedfilelistmodel.cpp:184
-#: sharedfilepage.cpp:49
+#: downloadlistmodel.cpp:225 downloadpage.cpp:63 sharedfilelistmodel.cpp:182
+#: sharedfilepage.cpp:48
 msgid "Auto"
 msgstr ""
 
-#: downloadlistmodel.cpp:229 sharedfilelistmodel.cpp:185 sharedfilepage.cpp:51
+#: downloadlistmodel.cpp:226 sharedfilelistmodel.cpp:183 sharedfilepage.cpp:50
 msgid "Power Share"
 msgstr ""
 
-#: downloadlistmodel.cpp:235
+#: downloadlistmodel.cpp:232
 msgid "Waiting for hash"
 msgstr ""
 
-#: downloadlistmodel.cpp:236
+#: downloadlistmodel.cpp:233
 msgid "Hashing"
 msgstr ""
 
-#: downloadlistmodel.cpp:237
+#: downloadlistmodel.cpp:234
 msgid "Error"
 msgstr ""
 
-#: downloadlistmodel.cpp:238
+#: downloadlistmodel.cpp:235
 msgid "Paused"
 msgstr ""
 
-#: downloadlistmodel.cpp:239
+#: downloadlistmodel.cpp:236
 msgid "Completing"
 msgstr ""
 
-#: downloadlistmodel.cpp:240
+#: downloadlistmodel.cpp:237
 msgid "Complete"
 msgstr ""
 
-#: downloadlistmodel.cpp:241
+#: downloadlistmodel.cpp:238
 msgid "Allocating"
 msgstr ""
 
-#: downloadlistmodel.cpp:246
+#: downloadlistmodel.cpp:243
 msgid "Downloading"
 msgstr ""
 
-#: downloadlistmodel.cpp:246
+#: downloadlistmodel.cpp:243
 msgid "Waiting"
 msgstr ""
 
-#: downloadlistmodel.cpp:269 serverlistmodel.cpp:162
+#: downloadlistmodel.cpp:266 serverlistmodel.cpp:162
 msgid "Name"
 msgstr ""
 
-#: downloadlistmodel.cpp:270
+#: downloadlistmodel.cpp:267
 msgid "Size full"
 msgstr ""
 
-#: downloadlistmodel.cpp:271
+#: downloadlistmodel.cpp:268
 msgid "Size done"
 msgstr ""
 
-#: downloadlistmodel.cpp:272
+#: downloadlistmodel.cpp:269
 msgid "Speed"
 msgstr ""
 
-#: downloadlistmodel.cpp:273 serverlistmodel.cpp:168
-#: sharedfilelistmodel.cpp:213
+#: downloadlistmodel.cpp:270 serverlistmodel.cpp:168
+#: sharedfilelistmodel.cpp:211
 msgid "Priority"
 msgstr ""
 
-#: downloadlistmodel.cpp:274 searchlistmodel.cpp:133
+#: downloadlistmodel.cpp:271 searchlistmodel.cpp:132
 msgid "Status"
 msgstr ""
 
-#: downloadlistmodel.cpp:275 sharedfilelistmodel.cpp:216
+#: downloadlistmodel.cpp:272 sharedfilelistmodel.cpp:214
 msgid "Progress"
 msgstr ""
 
-#: downloadpage.cpp:52
+#: downloadpage.cpp:49
 msgid "Add Link"
 msgstr ""
 
-#: downloadpage.cpp:54 uploadpage.cpp:46
+#: downloadpage.cpp:51 uploadpage.cpp:45
 msgid "Info"
 msgstr ""
 
-#: downloadpage.cpp:56
+#: downloadpage.cpp:53
 msgid "Pause"
 msgstr ""
 
-#: downloadpage.cpp:58
+#: downloadpage.cpp:55
 msgid "Resume"
 msgstr ""
 
-#: downloadpage.cpp:60
+#: downloadpage.cpp:57
 msgid "Stop"
 msgstr ""
 
-#: downloadpage.cpp:62
+#: downloadpage.cpp:59
 msgid "Delete"
 msgstr ""
 
-#: downloadpage.cpp:64 searchpage.cpp:53 sharedfilepage.cpp:47
+#: downloadpage.cpp:61 searchpage.cpp:51 sharedfilepage.cpp:46
 msgid "Copy Ed2k"
 msgstr ""
 
-#: downloadpage.cpp:260 sharedfilepage.cpp:159
+#: downloadpage.cpp:257 sharedfilepage.cpp:158
 msgid "Set priority"
 msgstr ""
 
-#: kamule.cpp:58
+#: kamule.cpp:56
 msgid "AMuled"
 msgstr ""
 
-#: kamule.cpp:61
+#: kamule.cpp:59
 msgid "Network"
 msgstr ""
 
-#: kamule.cpp:64 searchpage.cpp:47
+#: kamule.cpp:62 searchpage.cpp:45
 msgid "Search"
 msgstr ""
 
-#: kamule.cpp:67 searchpage.cpp:51
+#: kamule.cpp:65 searchpage.cpp:49
 msgid "Download"
 msgstr ""
 
-#: kamule.cpp:70
+#: kamule.cpp:68
 msgid "Upload"
 msgstr ""
 
-#: kamule.cpp:73
+#: kamule.cpp:71
 msgid "Shared files"
 msgstr ""
 
-#: kamule.cpp:76
+#: kamule.cpp:74
 msgid "Preference"
 msgstr ""
 
-#: kamule.cpp:93 kamule.cpp:95 main.cpp:31
+#: kamule.cpp:91 kamule.cpp:93 main.cpp:37
 msgid "KaMule"
 msgstr ""
 
-#: kamule.cpp:96
+#: kamule.cpp:94
 msgid "KDE aMule Client"
 msgstr ""
 
-#: main.cpp:32
+#: main.cpp:38
 msgid "KDE aMule"
 msgstr ""
 
-#: main.cpp:33
-msgid "(C) 2012 Ni Hui"
+#: main.cpp:39
+msgid "(c) 2012-2016, Ni Hui"
 msgstr ""
 
-#: main.cpp:34
+#: main.cpp:40
 msgid "Ni Hui"
 msgstr ""
 
-#: main.cpp:34
+#: main.cpp:40
 msgid "Author"
 msgstr ""
 
-#: mystatusbar.cpp:96 mystatusbar.cpp:116
+#: mystatusbar.cpp:96 mystatusbar.cpp:121
 #, kde-format
 msgid "Users: E %1 K %2"
 msgstr ""
 
-#: mystatusbar.cpp:97 mystatusbar.cpp:117
+#: mystatusbar.cpp:97 mystatusbar.cpp:122
 #, kde-format
 msgid "Files: E %1 K %2"
 msgstr ""
 
-#: mystatusbar.cpp:98 mystatusbar.cpp:118
+#: mystatusbar.cpp:98 mystatusbar.cpp:123
 #, kde-format
 msgid "Up: %1"
 msgstr ""
 
-#: mystatusbar.cpp:99 mystatusbar.cpp:119
+#: mystatusbar.cpp:99 mystatusbar.cpp:124
 #, kde-format
 msgid "Down: %1"
 msgstr ""
 
-#: mystatusbar.cpp:100 mystatusbar.cpp:101 mystatusbar.cpp:128
+#: mystatusbar.cpp:100 mystatusbar.cpp:101 mystatusbar.cpp:133
 msgid "Disconnected"
 msgstr ""
 
-#: mystatusbar.cpp:100 mystatusbar.cpp:122 mystatusbar.cpp:125
+#: mystatusbar.cpp:100 mystatusbar.cpp:127 mystatusbar.cpp:130
 #, kde-format
 msgid "ED2K: %1"
 msgstr ""
 
-#: mystatusbar.cpp:101 mystatusbar.cpp:128 mystatusbar.cpp:131
-#: mystatusbar.cpp:134
+#: mystatusbar.cpp:101 mystatusbar.cpp:133 mystatusbar.cpp:136
+#: mystatusbar.cpp:139
 #, kde-format
 msgid "KAD: %1"
 msgstr ""
 
-#: mystatusbar.cpp:125
+#: mystatusbar.cpp:130
 msgid "Connecting"
 msgstr ""
 
-#: mystatusbar.cpp:131
+#: mystatusbar.cpp:136
 msgid "Firewalled"
 msgstr ""
 
-#: mystatusbar.cpp:134
+#: mystatusbar.cpp:139
 msgid "Open"
 msgstr ""
 
-#: networkpage.cpp:44
+#: networkpage.cpp:43
 msgid "Update From Url"
 msgstr ""
 
-#: networkpage.cpp:46
+#: networkpage.cpp:45
 msgid "Add Server"
 msgstr ""
 
-#: networkpage.cpp:50
+#: networkpage.cpp:49
 msgid "Disconnect"
 msgstr ""
 
-#: networkpage.cpp:52
+#: networkpage.cpp:51
 msgid "Remove"
 msgstr ""
 
@@ -385,11 +385,11 @@ msgstr ""
 msgid "Core tweak"
 msgstr ""
 
-#: preferencepage.cpp:41
+#: preferencepage.cpp:40
 msgid "Reset"
 msgstr ""
 
-#: preferencepage.cpp:43
+#: preferencepage.cpp:42
 msgid "Apply"
 msgstr ""
 
@@ -733,19 +733,19 @@ msgstr ""
 msgid "Smart ID check"
 msgstr ""
 
-#: searchlistmodel.cpp:131 sharedfilelistmodel.cpp:211 uploadlistmodel.cpp:207
+#: searchlistmodel.cpp:130 sharedfilelistmodel.cpp:209 uploadlistmodel.cpp:207
 msgid "Filename"
 msgstr ""
 
-#: searchlistmodel.cpp:132 sharedfilelistmodel.cpp:212
+#: searchlistmodel.cpp:131 sharedfilelistmodel.cpp:210
 msgid "Size"
 msgstr ""
 
-#: searchlistmodel.cpp:134
+#: searchlistmodel.cpp:133
 msgid "Source Count (XFER)"
 msgstr ""
 
-#: searchpage.cpp:49
+#: searchpage.cpp:47
 msgid "Cancel"
 msgstr ""
 
@@ -789,11 +789,11 @@ msgstr ""
 msgid "Version"
 msgstr ""
 
-#: sharedfilelistmodel.cpp:214
+#: sharedfilelistmodel.cpp:212
 msgid "Require count"
 msgstr ""
 
-#: sharedfilelistmodel.cpp:215
+#: sharedfilelistmodel.cpp:213
 msgid "Accept count"
 msgstr ""
 

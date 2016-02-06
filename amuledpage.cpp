@@ -23,11 +23,10 @@
 
 #include <QAction>
 #include <QCryptographicHash>
+#include <QIcon>
 #include <QTimer>
 
 #include <KAboutData>
-#include <KComponentData>
-#include <KGlobal>
 #include <KPtyDevice>
 #include <KPtyProcess>
 
@@ -45,17 +44,17 @@ AMuledPageWidget::AMuledPageWidget(QWidget* parent)
     amuled = 0;
 
     // set action
-    connectAct = new QAction(KIcon("view-refresh"), i18n("Connect"), this);
+    connectAct = new QAction(QIcon::fromTheme("view-refresh"), i18n("Connect"), this);
     connect(connectAct, SIGNAL(triggered()), this, SLOT(slotConnect()));
-    loginAct = new QAction(KIcon("view-refresh"), i18n("Login"), this);
+    loginAct = new QAction(QIcon::fromTheme("view-refresh"), i18n("Login"), this);
     connect(loginAct, SIGNAL(triggered()), this, SLOT(slotLogin()));
-    connectEd2kAct = new QAction(KIcon("network-connect"), i18n("Connect Ed2k"), this);
+    connectEd2kAct = new QAction(QIcon::fromTheme("network-connect"), i18n("Connect Ed2k"), this);
     connect(connectEd2kAct, SIGNAL(triggered()), this, SLOT(slotConnectEd2k()));
-    disconnectEd2kAct = new QAction(KIcon("network-disconnect"), i18n("Disconnect Ed2k"), this);
+    disconnectEd2kAct = new QAction(QIcon::fromTheme("network-disconnect"), i18n("Disconnect Ed2k"), this);
     connect(disconnectEd2kAct, SIGNAL(triggered()), this, SLOT(slotDisconnectEd2k()));
-    connectKadAct = new QAction(KIcon("network-connect"), i18n("Connect Kad"), this);
+    connectKadAct = new QAction(QIcon::fromTheme("network-connect"), i18n("Connect Kad"), this);
     connect(connectKadAct, SIGNAL(triggered()), this, SLOT(slotConnectKad()));
-    disconnectKadAct = new QAction(KIcon("network-disconnect"), i18n("Disconnect Kad"), this);
+    disconnectKadAct = new QAction(QIcon::fromTheme("network-disconnect"), i18n("Disconnect Kad"), this);
     connect(disconnectKadAct, SIGNAL(triggered()), this, SLOT(slotDisconnectKad()));
 
     // button actions
@@ -207,12 +206,11 @@ void AMuledPageWidget::slotConnect()
 
 void AMuledPageWidget::slotLogin()
 {
-    const KComponentData& kcd = KGlobal::mainComponent();
-    const KAboutData* about = kcd.aboutData();
+    const KAboutData about = KAboutData::applicationData();
 
     QECPacket p(EC_OP_AUTH_REQ);
-    p.addTag(EC_TAG_CLIENT_NAME, about->appName());
-    p.addTag(EC_TAG_CLIENT_VERSION, about->version());
+    p.addTag(EC_TAG_CLIENT_NAME, about.componentName());
+    p.addTag(EC_TAG_CLIENT_VERSION, about.version());
     p.addTag(EC_TAG_PROTOCOL_VERSION, (quint64)EC_CURRENT_PROTOCOL_VERSION);
 //     p.addTag(EC_TAG_CAN_NOTIFY);
 

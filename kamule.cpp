@@ -21,13 +21,11 @@
 
 #include "kamule.h"
 
+#include <QIcon>
+#include <QMenuBar>
 #include <QTabWidget>
 #include <QTimer>
 
-#include <KDebug>
-#include <KIcon>
-#include <KLocale>
-#include <KMenuBar>
 #include <KStatusNotifierItem>
 
 #include "qecpacket.h"
@@ -47,7 +45,7 @@
 #include "mystatusbar.h"
 
 KaMule::KaMule()
-: KXmlGuiWindow()
+: QMainWindow()
 {
     tabwidget = new QTabWidget;
     tabwidget->setDocumentMode(true);
@@ -55,25 +53,25 @@ KaMule::KaMule()
     setCentralWidget(tabwidget);
 
     amuledpage = new AMuledPageWidget(this);
-    tabwidget->addTab(amuledpage, KIcon("kamule"), i18n("AMuled"));
+    tabwidget->addTab(amuledpage, QIcon::fromTheme("kamule"), i18n("AMuled"));
 
     networkpage = new NetworkPageWidget(this);
-    tabwidget->addTab(networkpage, KIcon("applications-internet"), i18n("Network"));
+    tabwidget->addTab(networkpage, QIcon::fromTheme("applications-internet"), i18n("Network"));
 
     searchpage = new SearchPageWidget(this);
-    tabwidget->addTab(searchpage, KIcon("edit-find"), i18n("Search"));
+    tabwidget->addTab(searchpage, QIcon::fromTheme("edit-find"), i18n("Search"));
 
     downloadpage = new DownloadPageWidget(this);
-    tabwidget->addTab(downloadpage, KIcon("go-down"), i18n("Download"));
+    tabwidget->addTab(downloadpage, QIcon::fromTheme("go-down"), i18n("Download"));
 
     uploadpage = new UploadPageWidget(this);
-    tabwidget->addTab(uploadpage, KIcon("go-up"), i18n("Upload"));
+    tabwidget->addTab(uploadpage, QIcon::fromTheme("go-up"), i18n("Upload"));
 
     sharedfilepage = new SharedFilePageWidget(this);
-    tabwidget->addTab(sharedfilepage, KIcon("folder-remote"), i18n("Shared files"));
+    tabwidget->addTab(sharedfilepage, QIcon::fromTheme("folder-remote"), i18n("Shared files"));
 
     preferencepage = new PreferencePageWidget(this);
-    tabwidget->addTab(preferencepage, KIcon("preferences-system"), i18n("Preference"));
+    tabwidget->addTab(preferencepage, QIcon::fromTheme("preferences-system"), i18n("Preference"));
 
     timer = new QTimer(this);
     timer->setSingleShot(true);
@@ -96,8 +94,6 @@ KaMule::KaMule()
     tray->setToolTipSubTitle(i18n("KDE aMule Client"));
     tray->setCategory(KStatusNotifierItem::ApplicationStatus);
     tray->setStatus(KStatusNotifierItem::Active);
-
-    setupGUI();
 
     menuBar()->hide();
 

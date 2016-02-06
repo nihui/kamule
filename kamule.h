@@ -22,7 +22,7 @@
 #ifndef KAMULE_H
 #define KAMULE_H
 
-#include <KXmlGuiWindow>
+#include <QMainWindow>
 #include "qecpacketsubscriber.h"
 
 class QTabWidget;
@@ -36,7 +36,7 @@ class UploadPageWidget;
 class SharedFilePageWidget;
 class PreferencePageWidget;
 
-class KaMule : public KXmlGuiWindow, public QECPacketSubscriber
+class KaMule : public QMainWindow, public QECPacketSubscriber
 {
     Q_OBJECT
 public:

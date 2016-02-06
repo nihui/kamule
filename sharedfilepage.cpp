@@ -24,12 +24,11 @@
 #include <QAction>
 #include <QApplication>
 #include <QClipboard>
+#include <QIcon>
+#include <QMenu>
 #include <QSortFilterProxyModel>
 
-#include <KDebug>
-#include <KIcon>
-#include <KLocale>
-#include <KMenu>
+#include <KLocalizedString>
 
 #include "qecpacket.h"
 
@@ -44,7 +43,7 @@ SharedFilePageWidget::SharedFilePageWidget(QWidget* parent)
     setupUi(this);
 
     // set action
-    copyLinkAct = new QAction(KIcon("document-export"), i18n("Copy Ed2k"), this);
+    copyLinkAct = new QAction(QIcon::fromTheme("document-export"), i18n("Copy Ed2k"), this);
     connect(copyLinkAct, SIGNAL(triggered()), this, SLOT(slotCopyLink()));
     priorityAutoAct = new QAction(i18n("Auto"), this);
     priorityAutoAct->setCheckable(true);
@@ -154,9 +153,9 @@ void SharedFilePageWidget::showContextMenu(const QPoint& pos)
     bool autopriority = (priority >= 10);
     if (autopriority) priority -= 10;
 
-    KMenu menu;
+    QMenu menu;
     menu.addAction(copyLinkAct);
-    QMenu* priorityMenu = menu.addMenu(KIcon("flag"), i18n("Set priority"));
+    QMenu* priorityMenu = menu.addMenu(QIcon::fromTheme("flag"), i18n("Set priority"));
     priorityMenu->addAction(priorityAutoAct);
     priorityMenu->addAction(priorityPowerShareAct);
     priorityMenu->addAction(priorityVeryHighAct);
